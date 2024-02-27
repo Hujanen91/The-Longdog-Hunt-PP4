@@ -1,1 +1,1 @@
-web: gunicorn longdog_hunt.wsgi
+web: gunicorn longdog.wsgi
