@@ -23,9 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_e-1k!2e@ksz^e8fra9p(s(i@c-oq!f@d$arsul28qun@9j+(6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-hujanen91-thelongdoghun-pdyykwod2mm.ws-eu108.gitpod.io']
+ALLOWED_HOSTS = ['8000-hujanen91-thelongdoghun-pdyykwod2mm.ws-eu108.gitpod.io',
+                 'https://the-longdog-hunt-9f116eb214b4.herokuapp.com/']
 
 
 # Application definition
@@ -37,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home',
+    'blog',
 ]
 
 MIDDLEWARE = [
