@@ -3,5 +3,7 @@
 }
 
 .author {
-    background-color:#4f968c
+    background-color:#4f968c;
+    border-radius: 15px;
+    padding-left: 10px;
 }
