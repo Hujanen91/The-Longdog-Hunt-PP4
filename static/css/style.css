@@ -1,13 +1,3 @@
 .footer {
     background-color: #4f968c;
 }
-
-.post-img {
-    display: flex;
-    width: auto;
-    justify-content: center;
-}
-
-.thin {
-    font-size: 55px;
-}
