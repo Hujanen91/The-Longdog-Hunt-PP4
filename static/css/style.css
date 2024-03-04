@@ -1,3 +1,9 @@
 .footer {
     background-color: #49888d;
 }
+
+.post-img {
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
