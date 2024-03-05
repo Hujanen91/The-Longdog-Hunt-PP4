@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
+
 <div class="container mt-5">
     <div class="row">
-        <div class="col-4 text-center">
-            <img src="{% static 'images/20230808_103946.jpg' %}" width="75%">
-        </div>
-        <div class="col-8">
+        <div class="text-center">
+            <img class="about-profile-img float-start col-5 col-md-4 col-lg-3" src="{% static 'images/20230808_103946.jpg' %}" width="75%">
+        
+        <div class="col-12">
             <!-- Title goes between these h2 tags -->
             <h2></h2>
             <!-- Content goes directly underneath this -->
