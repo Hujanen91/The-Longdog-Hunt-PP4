@@ -21,11 +21,11 @@
     border-radius: 50px ;
 }
 
-.container {
+.post-container {
     width: 95%;
     background-color: #4f968c;
-    color: #ffff;
     border-radius: 25px;
+    padding-bottom: 5px;
 }
 
 .link {
@@ -75,13 +75,13 @@ img.col-1 {
 }
 
 @media screen and (min-width: 992px){
-    .container {
+    .post-container {
         max-width: 760px;
     }
 }
 
 @media screen and (max-width: 576px){
-    .container {
+    .post-container {
         margin: 10px;
     }    
 }
