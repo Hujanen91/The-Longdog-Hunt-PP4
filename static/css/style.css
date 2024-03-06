@@ -5,8 +5,11 @@
 
 .author {
     background-color:#4f968c;
+    color: #ffff;
     border-radius: 15px;
     padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .longdog-collapse {
@@ -19,6 +22,7 @@
 }
 
 .container {
+    width: 95%;
     background-color: #4f968c;
     color: #ffff;
     border-radius: 25px;
@@ -35,7 +39,6 @@
     border-radius: 25px;
     border-color: #af6c76;
     margin-bottom: 10px;
-    
 }
 
 .btn:hover {
@@ -69,4 +72,16 @@ img.col-1 {
     font-size: 100%;
     margin: 0;
     }
+}
+
+@media screen and (min-width: 992px){
+    .container {
+        max-width: 760px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .container {
+        margin: 10px;
+    }    
 }
