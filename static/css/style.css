@@ -1,5 +1,6 @@
 .flex-shrink-0 {
     background-color: #e9f0f0;
+    padding-bottom: 50px;
 }
 
 .author {
@@ -15,6 +16,35 @@
 
 .about-profile-img {
     border-radius: 50px ;
+}
+
+.container {
+    background-color: #4f968c;
+    color: #ffff;
+    border-radius: 25px;
+}
+
+.link {
+    color: #914D57;
+}
+
+.btn {
+    background-color: #914D57;
+    color: #ffff;
+    border-width: 5px;
+    border-radius: 25px;
+    border-color: #af6c76;
+    margin-bottom: 10px;
+    
+}
+
+.btn:hover {
+    background-color: #ce919b;
+    color: #000000;
+    border-width: 5px;
+    border-radius: 25px;
+    border-color: #914D57;
+    margin-bottom: 10px;
 }
 
 .footer {
