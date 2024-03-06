@@ -84,6 +84,11 @@
     </nav>
 
     <main class="flex-shrink-0 main-bg">
+        {% if user.is_authenticated %}
+        <p class="text-end m-3"><img src="{% static 'images/blog_images/welcome.png' %}" alt="Welcome sign" class="col-1"> {{ user }}!</p>
+        {% else %}
+        <p class="text-end m-3">You are not logged in</p>
+        {% endif %}
 
         {% block content %}
         <!-- Content Goes here -->

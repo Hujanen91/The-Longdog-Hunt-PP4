@@ -1,5 +1,5 @@
-.footer {
-    background-color: #4f968c;
+.flex-shrink-0 {
+    background-color: #e9f0f0;
 }
 
 .author {
@@ -9,9 +9,34 @@
 }
 
 .longdog-collapse {
+    margin-top: 10px;
     margin-left: -10px
 }
 
 .about-profile-img {
     border-radius: 50px ;
+}
+
+.footer {
+    background-color: #4f968c;
+}
+
+img.col-1 {
+    max-height: 80px;
+    max-width: 80px;
+    min-height: 55px;
+    min-width: 55px;
+    margin-bottom: 3px;
+}
+
+.navbar-light .navbar-text {
+    margin: 25px;
+    font-size: 115%;
+}
+
+@media screen and (max-width: 992px){
+    .navbar-light .navbar-text {
+    font-size: 100%;
+    margin: 0;
+    }
 }
