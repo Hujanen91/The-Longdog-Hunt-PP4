@@ -15,7 +15,7 @@ class About(models.Model):
 class ContactForm(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField()
-    message = models.TextField()
+    message = models.TextField(max_length=700)
     read = models.BooleanField(default=False)
 
     def __str__(self):

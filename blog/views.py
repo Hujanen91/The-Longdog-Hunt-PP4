@@ -32,7 +32,7 @@ def post_detail(request, slug):
     
     if request.method == "POST":
         print("Recieved a POST request")
-        comment_form = CommentForm(data=request.POST)
+        comment_form = CommentForm(request.POST)
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
             comment.author = request.user

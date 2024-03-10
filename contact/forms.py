@@ -4,5 +4,5 @@ from django import forms
 
 class contact_form(forms.ModelForm):
     class Meta:
-        model = Contact
+        model = ContactForm
         fields = ('name', 'email', 'message')
