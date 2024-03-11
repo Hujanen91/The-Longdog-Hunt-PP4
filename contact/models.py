@@ -12,7 +12,7 @@ class About(models.Model):
         return self.title
 
 
-class ContactForm(models.Model):
+class Contact(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField()
     message = models.TextField(max_length=700)

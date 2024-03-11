@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import About, ContactForm
 from django_summernote.admin import SummernoteModelAdmin
+from .models import About, Contact
+
 
 
 @admin.register(About)
@@ -14,9 +15,11 @@ class AboutAdmin(SummernoteModelAdmin):
 #       own projects, then inherit from admin.ModelAdmin like
 #       we do below.
 
-@admin.register(ContactForm)
-class ContactFormAdmin(admin.ModelAdmin):
-
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    """
+    Lists message and read fields for display in admin
+    """
     list_display = ('message', 'read',)
 
 # Register your models here.
