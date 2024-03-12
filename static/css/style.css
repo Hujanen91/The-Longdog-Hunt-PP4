@@ -3,6 +3,10 @@
     padding-bottom: 50px;
 }
 
+a.post-link {
+    text-decoration: none;
+}
+
 .author {
     background-color:#4f968c;
     color: #ffff;

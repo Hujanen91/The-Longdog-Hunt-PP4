@@ -12,4 +12,3 @@ def contact_form_view(request):
     else:
         contact_form = ContactForm()
     return render(request, 'contact.html', {'contact_form': contact_form})
-    print("rendered view")
