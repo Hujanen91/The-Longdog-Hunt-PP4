@@ -1,16 +1,40 @@
+.bg-white {
+    background-image: linear-gradient(white, #d9ebeb);
+    background-color: white;
+}
+
 .flex-shrink-0 {
-    background-color: #e9f0f0;
+    background-color: #d9ebeb;
     padding-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-body:hover {
+    background-color: #ffffffc4;
+    opacity: 70%;
+    transition-duration: 1s;
+}
+
+.card-title {
+    color: #3a3a3a;
+}
+
+.card-img-top {
+    border-radius: 25px;
 }
 
 .author {
     position: relative;
     background-color:#4f968c;
     color: #ffff;
-    border-radius: 15px;
+    border-radius: 25px;
     padding-left: 10px;
     padding-top: 5px;
-    margin-bottom: -10px;
+    padding-bottom: 5px;
+    margin-top: -30px;
 }
 
 .longdog-collapse {
