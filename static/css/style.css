@@ -3,17 +3,14 @@
     padding-bottom: 50px;
 }
 
-a.post-link {
-    text-decoration: none;
-}
-
 .author {
+    position: relative;
     background-color:#4f968c;
     color: #ffff;
     border-radius: 15px;
     padding-left: 10px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    margin-bottom: -10px;
 }
 
 .longdog-collapse {

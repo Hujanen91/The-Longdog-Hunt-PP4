@@ -4,6 +4,7 @@
 }
 
 .author {
+    position: relative;
     background-color:#4f968c;
     color: #ffff;
     border-radius: 15px;
