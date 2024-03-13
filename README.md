@@ -101,7 +101,7 @@ __The Contact page consists of:__
 
 __Contact form__
 
-The submission form gives the user a way to contact the admin of the blog if they have any questions etc.
+The contact form gives the user a way to contact the admin of the blog if they have any questions etc.
 
 The fields the user needs to fill in is:
 
@@ -109,7 +109,7 @@ The fields the user needs to fill in is:
 - Email
 - Message
 
-_Additional_: All of the fields are required to be filled in, if not the user will be prompted to fill in the field before sending. 
+_Additional_: All of the fields are required to be filled in, if it's not the user will be prompted to fill in the field before sending. 
 The email field needs to contain an email with @ in it to be sent.
 
 ___Purpose of feature:___
@@ -128,17 +128,17 @@ __Login form__
 
 The login form allows the user to enter their credentials and authenticate to enter the sites authenticated state.
 
-The login form also contains a link to the [Sign up page](#signup-page) in case the user is not already registered.
+The login form also contains a link to the [Register page](#register-page) in case the user is not already registered.
 
 ___Purpose of feature:___
 Provide users with a way to login to the site.
 
-<a name="signup-page"></a>
-### __Sign up page__
+<a name="register-page"></a>
+### __Register page__
 
-![Sign up page](media/signuppage.png)
+![Register page](img)
 
-__The Sign up page consists of:__
+__The Register page consists of:__
 
     - Sign up form
 
@@ -153,115 +153,26 @@ The sign up form also contains a link to the [Login page](#login-page) in case t
 ___Purpose of feature:___
 Provide users with a way to register an account on the site.
 
-<a name="your-profile-page"></a>
-### __Your profile page__
+<a name="Blogpost-page"></a>
+### __Blogpost page__
 
-![Your profile page](media/yourprofilepage.png)
-![Your profile page continuation](media/yourprofilepage2.png)
+![Blogpost page](img)
 
-__The Your profile page consists of:__
+__The Blogpost page consists of:__
 
-    - Profile info section
-    - Profile posts section
+    - A view of the blogpost
+    - A commentfield under the blogpost
 
-__Profile info section__
+The Blogpost page displays the Title of the blogpost, the author, a time and date when the blogpost was created, possible images in the blogpost and the text content.
 
-The profile info section contains following info about the profile:
-
-- Username
-- Number of posts
-- Date which the user registered on
+Below the blogpost there's a comment field and a textfield for a logged in user to write a comment in. If the user isn't logged in they can't comment and are prompted to login first along with links to the login page.
 
 ___Purpose of feature:___
-Provide users with a way to get a quick overview of their account.
+Provide users with a way to see the specific blogposts and give logged in users a way to interact with the writer and share their opinion of the blogpost through comments.
 
-__Profile posts section__
 
-The profile posts section contains [Project Cards](#project-cards) displaying the posts which has been uploaded by the user. Below each card are buttons allowing the user to either delete the post or update the posts info.
 
-_Additional_: The delete button displays a modal requiring the user to confirm the deletion of the post.
-
-![Delete post modal](media/deletepostmodal.png)
-
-___Purpose of feature:___
-Provide users with a way to see their uploaded posts aswell as update or delete their posts as part of the CRUD(Create, read, update, delete) criteria.
-
-<a name="profile-page"></a>
-### __Profile page__
-
-![Profile page](media/profilepage.png)
-
-__The Profile page consists of:__
-
-    - Profile info section
-    - Profile posts section
-
-The profile page is a copy of the [Your profile page](#your-profile-page) but without the "Your profile" header and options to update or delete posts.
-
-The purpose of this page is for users to view other profiles than their own.
-
-___Purpose of feature:___
-Provide users with a way to see specific users and their posts.
-
-<a name="project-page"></a>
-### __Project page__
-
-![Project page](media/projectpage.png)
-
-__The Project page consists of:__
-
-    - Project image section
-    - Profile section
-    - Project info section
-    - Project links
-    - Readme section
-    - Like button
-    - Comment section
-
-__Project image section__
-
-The project image section displays the image provided during the project submission or a default image if no image was provided.
-
-___Purpose of feature:___
-Provide users with an image of the project.
-
-__Profile section__
-
-The profile section contains the username hyperlinked to their [Profile page](#profile-page) aswell as [Project cards](#project-cards) below displaying their posts.
-
-The profile section is only visible on medium screen sizes(bootstrap preset) or larger.
-
-_Additional_: On medium screen sizes and smaller, the username, hyperlinked to the [profile page](#profile-page) of the post author is instead visible below the project title.
-
-___Purpose of feature:___
-Provide users with a quick and easy way to see and visit specific users and a few of their posts.
-
-__Project info section__
-
-The project info section contains the project title and description provided during project submission.
-
-___Purpose of feature:___
-Provide users with a way to read the provided info for a post.
-
-__Project links__
-
-The project links (Live link to project and GitHub repo link) are displayed below the project info section and provide the user a way to check out the project.
-
-___Purpose of feature:___
-Provide users with a way to check out the project and it's associated GitHub repository.
-
-__Readme section__
-
-![Readme section](media/readmesection.png)
-
-The Readme section allows the user to read the Readme.md file found on the GitHub repo link the author of the post provided during project submission.
-
-_Additional_: If no GitHub repo link is provided or there is an error fetching the file, the readme section instead displays "Readme.md not available".
-
-___Purpose of feature:___
-Provide users with a way to read the Readme.md file associated with the project.
-
-__Like button__
+<!-- __Like button__
 
 The like button, placed on the right end of the screen in height with the project title, allows users to like or unlike a post.
 
@@ -276,12 +187,12 @@ __Comment section__
 
 The comment section allows users to post comments on a post aswell as delete their own comments using the X button in the above image.
 
-_Additional_: The delete button displays a modal requiring the user to confirm deletion of the comment.
+_Additional_: The delete button displays a modal requiring the user to confirm deletion of the comment. -->
 ## Testing
 
 __Manual testing__
 
-_Tests done with DEBUG = False in settings.py_
+<!-- _Tests done with DEBUG = False in settings.py_
 
 ___Case: Accessing authorization required links without logging in:___
 
@@ -309,12 +220,12 @@ ___Case: Inserting invalid or no data during update project:___
 |-----------------------------------------------|----------------------------------|-----------------------------------------------------|------------------------------------------|
 | Upload file larger than 10MB                  | Error message                    | Server Error (500)                                  | Write js script to validate inputs       |
 | Upload file + toggle generate from link       | Error message / Toggle not available when file uploaded | Post uploaded using image generated from link | Write js script to validate inputs       |
-| Post using a non-GitHub repo link in field    | Error message                    | Post uploaded successfully                           | Write js script to validate inputs       |
+| Post using a non-GitHub repo link in field    | Error message                    | Post uploaded successfully                           | Write js script to validate inputs       | -->
 
 
 __Unit testing__
 
-Unit tests were written using PyTest and Selenium since Seleniums abillity to interact directly with the browser better reflects how the user actually would interact with the site. Tests were written with the AAA(Arrange, Act, Assert) principle in mind.
+<!-- Unit tests were written using PyTest and Selenium since Seleniums abillity to interact directly with the browser better reflects how the user actually would interact with the site. Tests were written with the AAA(Arrange, Act, Assert) principle in mind.
 
 Unit test files:
 
@@ -331,7 +242,7 @@ Unit test files:
         - Tests comment / delete comment functionality
     5. test_submission_update.py
         - Tests invalid inputs in submission form
-        - Tests invalid inputs in update project form
+        - Tests invalid inputs in update project form -->
 
 ## Validators
 
