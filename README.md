@@ -248,15 +248,15 @@ Unit test files:
 
 __HTML & CSS__
 
-All html and css files ran through the [Official W3C validator](https://validator.w3.org/)
+<!-- All html and css files ran through the [Official W3C validator](https://validator.w3.org/) -->
 
-___CSS___: All files valid
+___CSS___: <!-- All files valid -->
 
-___HTML___: 100+ errors, all due to the use of Jinja templating
+___HTML___:
 
 __Python__
 
-All files ran through Code Institutes [Python Linter](https://pep8ci.herokuapp.com/#)
+<!-- All files ran through Code Institutes [Python Linter](https://pep8ci.herokuapp.com/#)
 
 ___hub_main/views.py___
 
@@ -365,11 +365,11 @@ ___members/apps.py:___ All clear, no errors found
 
 ___members/admin.py:___ All clear, no errors found
 
-Errors ignored since they make no impact on the functionality but might impact functionality if resolved.
+Errors ignored since they make no impact on the functionality but might impact functionality if resolved. -->
 
 __JavaScript__
 
-All files run through the [JSHint Linter](https://jshint.com/)
+<!-- All files run through the [JSHint Linter](https://jshint.com/)
 
 ___card_animations.js___
 
@@ -407,11 +407,11 @@ ___word_animations.js___
 
 | Error |
 | ----- |
-| var gsap not declared (declared in script tag in template) |
+| var gsap not declared (declared in script tag in template) | -->
 
 __Lighthouse__
 
-All pages were analyzed by Lighthouse: [See reports](https://drive.google.com/drive/folders/1D13aGpjEhCFeHpAR_vUcITRPG4WzOIBk?usp=sharing)
+All pages were analyzed by Lighthouse: [See reports]()
 
 ## Deployment
 
@@ -466,11 +466,11 @@ os.environ["THUMIO_AUTH"]=YOUR_THUMIO_AUTH_KEY
 
 ## Database schema
 
-![Database schema](media/schema.png)
+![Database schema](img)
 
 ## Credits
 
-__API's used__:
+<!-- __API's used__:
 
 [GitHub' REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28): For fetching Readme.md file for Readme section in [Project page](#project-page).
 
@@ -500,4 +500,4 @@ __Media__:
 
 [Haikei](https://haikei.app/): For background svg on the [home page](#home-page).
 
-[FontAwesome](https://fontawesome.com/): For icons.
+[FontAwesome](https://fontawesome.com/): For icons. -->
