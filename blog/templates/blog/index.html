@@ -17,7 +17,7 @@
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top" src="{% static '/images/Octopus-07.webp' %}"
-                                    alt="placeholder image">
+                                    alt="image displayed on index from blogpost">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}"
                                     alt="{{ post.title }}">
