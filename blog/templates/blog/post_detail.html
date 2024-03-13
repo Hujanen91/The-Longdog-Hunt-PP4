@@ -3,7 +3,7 @@
 {% load crispy_forms_tags %}
 
 <div class="masthead">
-    <div class="post-container container">
+    <div class="post-container container masthead-container">
         <div class="row g-0">
             <div class="col-md-12 masthead-text">
                 <!-- Post title goes in these h1 tags -->
@@ -18,9 +18,9 @@
     </div>
 </div>
 
-<div class="container post-container">
+<div class="container post-container post-content-container">
     <div class="row">
-        <div class="post-container card mb-4 mt-3 left top">
+        <div class="post-container card mb-4 mt-3 left top post-content-text">
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
@@ -33,8 +33,11 @@
      <!-- Displaying count of comments -->
   <div class="row">
     <div class="col-12">
-      <strong class="text-secondary">
+      <strong class="text-secondary comment-count">
         <i class="far fa-comments"></i> {{ comment_count }}
+      </strong>
+      <strong class="text-secondary like-count">
+        <i class="far fa-heart"></i> {{ comment_count }}
       </strong>
     </div>
     <div class="col-12">
@@ -43,7 +46,7 @@
   </div>
   <!-- Displaying Comments -->
   <div class="row">
-    <div class="col-md-8 card mb-4  mt-3 ">
+    <div class="col-md-8 card mb-4  mt-3 display-comments">
       <h3>Comments:</h3>
       <div class="card-body">
         <!-- We want a for loop inside the empty control tags
@@ -78,7 +81,7 @@
       </div>
     </div>
     <!-- Creating New Comments -->
-    <div class="col-md-4 card mb-4 mt-3">
+    <div class="col-md-4 card mb-4 mt-3 creating-comment">
       <div class="card-body">
         {% if user.is_authenticated %}
         <h3>Leave a comment:</h3>
