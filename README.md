@@ -1,110 +1,592 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Longdog Hunt
 
-Welcome Jennifer Hujanen,
+The Longdog Hunt is a simple blog based on the kids tv show Bluey and the easter eggs in the show called Longdogs that is hidden in plain sight in pretty much every episode. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Device Mockups]()
+## Features
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<a name="navbar"></a>
+### __Navbar__
 
-## Gitpod Reminders
+__Fully responsive navbar with links to:__
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+    - Home page
+    - About page
+    - Register section
+    - Login section
+    - Contact Section
 
-`python3 -m http.server`
+__Logo hyperlinked to home page:__
+![Logo](static/images/readme_files/File-01-color-1.png)
 
-A blue button should appear to click: _Make Public_,
+Featured on all pages across the site.
 
-Another blue button should appear to click: _Open Browser_.
+The navbar dapts to if user is authenticated or not (When logged in Login and Register will be hidden and Logout will be displayed in the navbar.)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+__Navbar for non-authenticated users__:
 
-A blue button should appear to click: _Make Public_,
+![Navbar non auth]()
+__Navbar for authenticated users__:
 
-Another blue button should appear to click: _Open Browser_.
+![Navbar auth]()
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+___Purpose of feature:___
+Provide users with an easy and straight-forward way to navigate the site
 
-To log into the Heroku toolbelt CLI:
+<a name="footer"></a>
+### __Footer__
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Featured on all pages across the site.
+The footer contains links to my personal GitHub, Instagram and Facebook.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Footer]()
 
-------
+___Purpose of feature:___
+Provide users with a way to connect with me and check out my GitHub profile and social media accounts.
 
-## Release History
+<a name="home-page"></a>
+### __Home page__
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+__The Home page consists of:__
 
-**September 20 2023:** Update Python version to 3.9.17.
+    - Blog Section
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+__Blog Section__
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+The Blog Section features the blogposts created by the author and will be displayed the same no matter if the user is loged in or not.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Blog Section]()
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+___Purpose of feature:___
+Provide users with a welcoming landing page that is straight forward and clear for the user what the website is all about.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<a name="about-page"></a>
+### __About page__
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+__The About page consists of:__
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+    - A profile picture of the blog admin
+    - About section
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![About page](img)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+__Profile picture__
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+The About page displays an image of the admin next to the paragraph section.
 
-------
+___Purpose of feature:___
+Provide users with some insight of who the admin is.
 
-## FAQ about the uptime script
+__About Section__
 
-**Why have you added this script?**
+Gives a description of the blog and its content and gives a small presentation of who the admin is.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+___Purpose of feature:___
+Provide users with information about the blog and a description of the admin.
 
-**How will this affect me?**
+![About Section](img)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+<a name="contact-page"></a>
+### __Contact Page__
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![Contact Page](img)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+__The Contact page consists of:__
 
-**So….?**
+    - Contact Form
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+__Contact form__
 
-**Can I opt out?**
+The submission form gives the user a way to contact the admin of the blog if they have any questions etc.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+The fields the user needs to fill in is:
 
+- Name
+- Email
+- Message
+
+_Additional_: All of the fields are required to be filled in, if not the user will be prompted to fill in the field before sending. 
+The email field needs to contain an email with @ in it to be sent.
+
+___Purpose of feature:___
+Provide users with a way to contact the admin and creator of the site.
+
+<a name="login-page"></a>
+### __Login page__
+
+![Login page](img)
+
+__The Login page consists of:__
+
+    - Login form
+
+__Login form__
+
+The login form allows the user to enter their credentials and authenticate to enter the sites authenticated state.
+
+The login form also contains a link to the [Sign up page](#signup-page) in case the user is not already registered.
+
+___Purpose of feature:___
+Provide users with a way to login to the site.
+
+<a name="signup-page"></a>
+### __Sign up page__
+
+![Sign up page](media/signuppage.png)
+
+__The Sign up page consists of:__
+
+    - Sign up form
+
+__Sign up form__
+
+The Sign up form which is provided by django allows the user to enter credentials for registration on the site.
+
+Through django it contains all the functionality for a secure registration and displays help text and error text to give the user feedback
+
+The sign up form also contains a link to the [Login page](#login-page) in case the user already has an account.
+
+___Purpose of feature:___
+Provide users with a way to register an account on the site.
+
+<a name="your-profile-page"></a>
+### __Your profile page__
+
+![Your profile page](media/yourprofilepage.png)
+![Your profile page continuation](media/yourprofilepage2.png)
+
+__The Your profile page consists of:__
+
+    - Profile info section
+    - Profile posts section
+
+__Profile info section__
+
+The profile info section contains following info about the profile:
+
+- Username
+- Number of posts
+- Date which the user registered on
+
+___Purpose of feature:___
+Provide users with a way to get a quick overview of their account.
+
+__Profile posts section__
+
+The profile posts section contains [Project Cards](#project-cards) displaying the posts which has been uploaded by the user. Below each card are buttons allowing the user to either delete the post or update the posts info.
+
+_Additional_: The delete button displays a modal requiring the user to confirm the deletion of the post.
+
+![Delete post modal](media/deletepostmodal.png)
+
+___Purpose of feature:___
+Provide users with a way to see their uploaded posts aswell as update or delete their posts as part of the CRUD(Create, read, update, delete) criteria.
+
+<a name="profile-page"></a>
+### __Profile page__
+
+![Profile page](media/profilepage.png)
+
+__The Profile page consists of:__
+
+    - Profile info section
+    - Profile posts section
+
+The profile page is a copy of the [Your profile page](#your-profile-page) but without the "Your profile" header and options to update or delete posts.
+
+The purpose of this page is for users to view other profiles than their own.
+
+___Purpose of feature:___
+Provide users with a way to see specific users and their posts.
+
+<a name="project-page"></a>
+### __Project page__
+
+![Project page](media/projectpage.png)
+
+__The Project page consists of:__
+
+    - Project image section
+    - Profile section
+    - Project info section
+    - Project links
+    - Readme section
+    - Like button
+    - Comment section
+
+__Project image section__
+
+The project image section displays the image provided during the project submission or a default image if no image was provided.
+
+___Purpose of feature:___
+Provide users with an image of the project.
+
+__Profile section__
+
+The profile section contains the username hyperlinked to their [Profile page](#profile-page) aswell as [Project cards](#project-cards) below displaying their posts.
+
+The profile section is only visible on medium screen sizes(bootstrap preset) or larger.
+
+_Additional_: On medium screen sizes and smaller, the username, hyperlinked to the [profile page](#profile-page) of the post author is instead visible below the project title.
+
+___Purpose of feature:___
+Provide users with a quick and easy way to see and visit specific users and a few of their posts.
+
+__Project info section__
+
+The project info section contains the project title and description provided during project submission.
+
+___Purpose of feature:___
+Provide users with a way to read the provided info for a post.
+
+__Project links__
+
+The project links (Live link to project and GitHub repo link) are displayed below the project info section and provide the user a way to check out the project.
+
+___Purpose of feature:___
+Provide users with a way to check out the project and it's associated GitHub repository.
+
+__Readme section__
+
+![Readme section](media/readmesection.png)
+
+The Readme section allows the user to read the Readme.md file found on the GitHub repo link the author of the post provided during project submission.
+
+_Additional_: If no GitHub repo link is provided or there is an error fetching the file, the readme section instead displays "Readme.md not available".
+
+___Purpose of feature:___
+Provide users with a way to read the Readme.md file associated with the project.
+
+__Like button__
+
+The like button, placed on the right end of the screen in height with the project title, allows users to like or unlike a post.
+
+_Additional_: The like button adapts to if the user is authenticated or not. If the user is not authenticated the like button is disabled and displays a tooltip on hover.
+
+___Purpose of feature:___
+Provide users with a way to to like posts they find interesting.
+
+__Comment section__
+
+![Comment section](media/commentsection.png)
+
+The comment section allows users to post comments on a post aswell as delete their own comments using the X button in the above image.
+
+_Additional_: The delete button displays a modal requiring the user to confirm deletion of the comment.
+## Testing
+
+__Manual testing__
+
+_Tests done with DEBUG = False in settings.py_
+
+___Case: Accessing authorization required links without logging in:___
+
+| Link                                      | Expected Result          | Actual Result                  | Resolved by                               |
+|-------------------------------------------|--------------------------|--------------------------------|------------------------------------------|
+| [http://127.0.0.1:8000/profile_page/](http://127.0.0.1:8000/profile_page/) | Redirect to home page   | Server Error (500)            | Check user authenticated in associated view |
+| [http://127.0.0.1:8000/project_submission/](http://127.0.0.1:8000/project_submission/) | Redirect to home page   | Project submission page loaded  | Check user authenticated in associated view |
+| [http://127.0.0.1:8000/project_update/14/](http://127.0.0.1:8000/project_update/14/) | Redirect to home page   | Project update page loaded      | Check user authenticated and post author in associated view |
+| [http://127.0.0.1:8000/delete_post/14/](http://127.0.0.1:8000/delete_post/14/) | Redirect to home page   | Server Error (500)            | Check user authenticated and post author in associated view |
+| [http://127.0.0.1:8000/post_comment/14/](http://127.0.0.1:8000/post_comment/14/) | Redirect to home page   | Server Error (500)            | Check user authenticated in associated view |
+| [http://127.0.0.1:8000/like_post/14/](http://127.0.0.1:8000/like_post/14/) | Redirect to home page   | Server Error (500)            | Check user authenticated in associated view |
+| [http://127.0.0.1:8000/delete_comment/10/14/](http://127.0.0.1:8000/delete_comment/10/14/) | Redirect to home page   | Server Error (500)            | Check user authenticated and comment owner in associated view |
+
+___Case: Inserting invalid or no data during project submission:___
+
+| Test                                          | Expected Result                  | Actual Result                                       | Resolved by                               |
+|-----------------------------------------------|----------------------------------|-----------------------------------------------------|------------------------------------------|
+| Upload file larger than 10MB                  | Error message                    | Server Error (500)                                  | Write js script to validate inputs       |
+| Upload file + toggle generate from link       | Error message / Toggle not available when file uploaded | Post uploaded using image generated from link | Write js script to validate inputs       |
+| Post using a non-GitHub repo link in field    | Error message                    | Post uploaded successfully                           | Write js script to validate inputs       |
+
+___Case: Inserting invalid or no data during update project:___
+
+| Test                                          | Expected Result                  | Actual Result                                       | Resolved by                               |
+|-----------------------------------------------|----------------------------------|-----------------------------------------------------|------------------------------------------|
+| Upload file larger than 10MB                  | Error message                    | Server Error (500)                                  | Write js script to validate inputs       |
+| Upload file + toggle generate from link       | Error message / Toggle not available when file uploaded | Post uploaded using image generated from link | Write js script to validate inputs       |
+| Post using a non-GitHub repo link in field    | Error message                    | Post uploaded successfully                           | Write js script to validate inputs       |
+
+
+__Unit testing__
+
+Unit tests were written using PyTest and Selenium since Seleniums abillity to interact directly with the browser better reflects how the user actually would interact with the site. Tests were written with the AAA(Arrange, Act, Assert) principle in mind.
+
+Unit test files:
+
+    1. test_noauth_protection.py
+        - Tests access to authorization required url routes when user is not authenticated
+    2. test_auth.py
+        - Tests sign up functionality
+        - Tests login functionality
+        - Tests access to profile page and project submission page when logged in
+    3. test_misc.py
+        - Tests access to login and signup page when already logged in
+    4. test_like_comment.py
+        - Tests like / unlike functionality
+        - Tests comment / delete comment functionality
+    5. test_submission_update.py
+        - Tests invalid inputs in submission form
+        - Tests invalid inputs in update project form
+
+## Validators
+
+__HTML & CSS__
+
+All html and css files ran through the [Official W3C validator](https://validator.w3.org/)
+
+___CSS___: All files valid
+
+___HTML___: 100+ errors, all due to the use of Jinja templating
+
+__Python__
+
+All files ran through Code Institutes [Python Linter](https://pep8ci.herokuapp.com/#)
+
+___hub_main/views.py___
+
+| Line | Error                                  |
+| ---- | -------------------------------------- |
+| 77   | E501 line too long (138 > 79 characters) |
+| 103  | E501 line too long (97 > 79 characters)  |
+| 137  | E501 line too long (138 > 79 characters) |
+| 229  | E501 line too long (81 > 79 characters)  |
+| 287  | E501 line too long (93 > 79 characters)  |
+| 304  | E501 line too long (91 > 79 characters)  |
+| 314  | E501 line too long (93 > 79 characters)  |
+| 320  | E501 line too long (93 > 79 characters)  |
+
+___hub_main/urls.py___
+
+| Line | Error                                  |
+| ---- | -------------------------------------- |
+| 6    | E501 line too long (96 > 79 characters) |
+| 7    | E501 line too long (112 > 79 characters)|
+| 8    | E501 line too long (94 > 79 characters) |
+| 9    | E501 line too long (98 > 79 characters) |
+| 10   | E501 line too long (110 > 79 characters)|
+| 11   | E501 line too long (102 > 79 characters)|
+| 12   | E501 line too long (127 > 79 characters)|
+| 13   | E501 line too long (120 > 79 characters)|
+| 14   | E501 line too long (90 > 79 characters) |
+| 15   | E501 line too long (98 > 79 characters) |
+
+___hub_main/models.py___
+
+| Line | Error                                  |
+| ---- | -------------------------------------- |
+| 19   | E501 line too long (149 > 79 characters)|
+| 21   | E501 line too long (91 > 79 characters) |
+| 22   | E501 line too long (95 > 79 characters) |
+| 25   | E501 line too long (91 > 79 characters) |
+| 43   | E501 line too long (85 > 79 characters) |
+
+___hub_main/tests.py:___ All clear, no errors found
+
+___hub_main/apps.py:___ All clear, no errors found
+
+___hub_main/admin.py:___ All clear, no errors found
+
+___hub_main/tests/test_submission_update.py___
+
+| Line | Error                                  |
+| ---- | -------------------------------------- |
+| 14   | E501 line too long (86 > 79 characters) |
+
+___hub_main/tests/test_noauth_protection.py___
+
+| Line | Error                                  |
+| ---- | -------------------------------------- |
+| 14   | E501 line too long (86 > 79 characters) |
+
+___hub_main/tests/test_misc.py:___ All clear, no errors found
+
+
+___hub_main/tests/test_like_comment.py___
+
+| Line | Error                                  |
+| ---- | -------------------------------------- |
+| 14   | E501 line too long (82 > 79 characters) |
+| 22   | E501 line too long (86 > 79 characters) |
+| 23   | E501 line too long (81 > 79 characters) |
+| 30   | E501 line too long (82 > 79 characters) |
+| 38   | E501 line too long (86 > 79 characters) |
+| 39   | E501 line too long (81 > 79 characters) |
+| 46   | E501 line too long (81 > 79 characters) |
+| 47   | E501 line too long (80 > 79 characters) |
+| 64   | E501 line too long (102 > 79 characters)|
+| 65   | E501 line too long (102 > 79 characters)|
+| 68   | E501 line too long (82 > 79 characters) |
+| 69   | E501 line too long (90 > 79 characters) |
+
+___hub_main/tests/test_auth.py___
+
+| Line | Error                                  |
+| ---- | -------------------------------------- |
+| 20   | E501 line too long (80 > 79 characters) |
+| 21   | E501 line too long (82 > 79 characters) |
+| 22   | E501 line too long (82 > 79 characters) |
+| 29   | E501 line too long (81 > 79 characters) |
+| 53   | E501 line too long (92 > 79 characters) |
+| 62   | E501 line too long (107 > 79 characters)|
+
+___hub_main/run_tests.py:___All clear, no errors found
+
+___hub_main/helper_functions.py___
+
+| Line | Error                                  |
+| ---- | -------------------------------------- |
+| 22   | E501 line too long (85 > 79 characters) |
+
+___members/views.py:___ All clear, no errors found
+
+___members/urls.py:___ All clear, no errors found
+
+___members/tests.py:___ All clear, no errors found
+
+___members/models.py:___ All clear, no errors found
+
+___members/apps.py:___ All clear, no errors found
+
+___members/admin.py:___ All clear, no errors found
+
+Errors ignored since they make no impact on the functionality but might impact functionality if resolved.
+
+__JavaScript__
+
+All files run through the [JSHint Linter](https://jshint.com/)
+
+___card_animations.js___
+
+| Line | Warning                                                        |
+| ---- | --------------------------------------------------------------- |
+| 6    | Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (gsap, card) |
+| 9    | Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (gsap, card) |
+
+| Error |
+| ----- |
+| var gsap not declared (declared in script tag in template) |
+
+___home_animations.js___
+
+| Error |
+| ----- |
+| var gsap not declared (declared in script tag in template) |
+
+___option_animations.js___
+
+| Line | Warning                                                        |
+| ---- | --------------------------------------------------------------- |
+| 5    | Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (gsap, option) |
+| 8    | Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (gsap, option) |
+
+| Error |
+| ----- |
+| var gsap not declared (declared in script tag in template) |
+
+___load_github.js:___ No errors or warnings.
+
+___validate_inputs.js:___ No errors or warnings.
+
+___word_animations.js___
+
+| Error |
+| ----- |
+| var gsap not declared (declared in script tag in template) |
+
+__Lighthouse__
+
+All pages were analyzed by Lighthouse: [See reports](https://drive.google.com/drive/folders/1D13aGpjEhCFeHpAR_vUcITRPG4WzOIBk?usp=sharing)
+
+## Deployment
+
+This project was deployed to Heroku using these steps:
+
+    1. Fork or clone this repository
+    2. Create a new Heroku app
+    3. Set the buildpacks to Python
+    4. Set the config vars for your database connection and api keys
+    4. Link the Heroku app to the repository
+    5. Click on deploy
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/linx02/project-hub.git
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+
+Go to the project directory
+
+```bash
+  cd project_hub
 ```
 
-**Anything more?**
+Install dependencies
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+```bash
+  pip3 install -r requirements.txt
+```
 
----
+Start the server
 
-Happy coding!
+```bash
+  python3 manage.py runserver
+```
+
+Note that you will have to setup your own database and API connections using these steps:
+
+1. Create a file name "env.py" in the projects root directory.
+2. Copy and paste this code in the env.py file and replace values with your own:
+
+```python
+import os
+
+os.environ["DATABASE_URL"]=YOUR_DATABASE_URL
+os.environ["SECRET_KEY"]=YOUR_SECRET_KEY
+os.environ["CLOUDINARY_SECRET"]=YOUR_CLOUDINARY_SECRET
+os.environ["THUMIO_AUTH"]=YOUR_THUMIO_AUTH_KEY
+```
+
+## Database schema
+
+![Database schema](media/schema.png)
+
+## Credits
+
+__API's used__:
+
+[GitHub' REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28): For fetching Readme.md file for Readme section in [Project page](#project-page).
+
+[Thum.io's URL API](https://www.thum.io/documentation/api/url): For generating screenshots of provided links during project submission.
+
+__Libraries and frameworks__:
+
+[Bootstrap](https://getbootstrap.com/): CSS framework used.
+
+[Django](https://www.djangoproject.com/): Web framework used.
+
+[GreenSock's GSAP](https://greensock.com/): For animations.
+
+[PyTest](https://docs.pytest.org/en/7.4.x/): For testing.
+
+[Selenium](https://www.selenium.dev/): For testing.
+
+__Data storing__:
+
+[PostgreSQL](https://www.postgresql.org/): Database management system used.
+
+[Cloudinary](https://cloudinary.com/): For storing image files in the cloud.
+
+__Media__:
+
+[Freepik](https://www.freepik.com/): For svg in the hero section.
+
+[Haikei](https://haikei.app/): For background svg on the [home page](#home-page).
+
+[FontAwesome](https://fontawesome.com/): For icons.
