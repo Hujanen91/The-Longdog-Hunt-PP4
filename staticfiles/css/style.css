@@ -1,16 +1,51 @@
+.bg-white {
+    background-image: linear-gradient(white, #d9ebeb);
+    background-color: white;
+}
+
+hr {
+    background-color: #365050;
+}
+
 .flex-shrink-0 {
-    background-color: #e9f0f0;
+    background-color: #d9ebeb;
     padding-bottom: 50px;
 }
 
+a {
+    text-decoration: none;
+}
+
+.index-post-card {
+    background-color: #4f968cb4;
+    color: #ffffff;
+}
+
+.card-body:hover {
+    background-color: #a4c5c5;
+    opacity: 70%;
+    transition-duration: 1s;
+}
+
+.card-title {
+    color: #000000ad;
+}
+
+.card-img-top {
+    border-radius: 25px;
+}
+
 .author {
+    font-size: 18px;
+    font-weight: 400;
     position: relative;
-    background-color:#4f968c;
-    color: #ffff;
-    border-radius: 15px;
+    background-color: #afd9d3;
+    color: #2b2b2b;
+    border-radius: 25px;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-top: -30px;
 }
 
 .longdog-collapse {
@@ -22,11 +57,60 @@
     border-radius: 50px ;
 }
 
-.post-container {
-    width: 95%;
+.masthead-container {
+    color: #ffffff;
     background-color: #4f968c;
+    border-radius: 25px 25px 0px 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.masthead-container img {
+    display: grid;
     border-radius: 25px;
+    margin: auto;
+    justify-content: center;
+}
+
+.post-content-container {
+    color: #ffffff;
+    background-color: #4f968c;
+    border-radius: 0px 0px 25px 25px;
     padding-bottom: 5px;
+}
+
+.post-content-text {
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    background-color: #76b5ac78;;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.display-comments {
+    width: 62%;
+    margin-left: 18px;
+    color: #ffffff;
+    background-color: #2e5a5485;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.creating-comment {
+    width: 33%;
+    margin-right: 18px;
+    color: #ffffff;
+    background-color: #2e5a5485;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.comment-count {
+    color: #ffffff !important;
+}
+
+.like-count {
+    color: #ffffff !important;
+    padding-left: 10px;
 }
 
 .link {
@@ -83,6 +167,6 @@ img.col-1 {
 
 @media screen and (max-width: 576px){
     .post-container {
-        margin: 10px;
-    }    
+        
+}
 }
