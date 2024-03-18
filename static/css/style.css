@@ -89,13 +89,19 @@ a {
     border-radius: 25px;
 }
 
+.display-comments h3 {
+    margin-top: 10px;
+}
+
 .display-comments {
+    border: none;
     color: #ffffff;
     background-color: #2e5a5485;
     border-radius: 25px 0px 0px 25px;
 }
 
 .creating-comment {
+    border: none;
     color: #ffffff;
     background-color: #2e5a5485;
     border-radius: 0px 25px 25px 0px;
@@ -130,8 +136,8 @@ a {
 .btn {
     background-color: #914D57;
     color: #ffff;
-    border-width: 5px;
-    border-radius: 25px;
+    border-width: 2px;
+    border-radius: 10px;
     border-color: #af6c76;
     margin-bottom: 10px;
 }
@@ -139,8 +145,8 @@ a {
 .btn:hover {
     background-color: #ce919b;
     color: #000000;
-    border-width: 5px;
-    border-radius: 25px;
+    border-width: 2px;
+    border-radius: 10px;
     border-color: #914D57;
     margin-bottom: 10px;
 }
