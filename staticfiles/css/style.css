@@ -164,9 +164,3 @@ img.col-1 {
         max-width: 760px;
     }
 }
-
-@media screen and (max-width: 576px){
-    .post-container {
-        
-}
-}

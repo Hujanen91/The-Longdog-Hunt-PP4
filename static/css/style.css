@@ -17,8 +17,13 @@ a {
 }
 
 .index-post-card {
-    background-color: #4f968cb4;
-    color: #ffffff;
+    background-color:#4f968c;
+    border-radius: 25px;
+}
+
+.card {
+    background-color: #d9ebeb;
+    border: none;
 }
 
 .card-body:hover {
