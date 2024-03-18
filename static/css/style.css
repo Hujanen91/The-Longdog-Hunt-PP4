@@ -90,16 +90,12 @@ a {
 }
 
 .display-comments {
-    width: 62%;
-    margin-left: 18px;
     color: #ffffff;
     background-color: #2e5a5485;
     border-radius: 25px 0px 0px 25px;
 }
 
 .creating-comment {
-    width: 33%;
-    margin-right: 18px;
     color: #ffffff;
     background-color: #2e5a5485;
     border-radius: 0px 25px 25px 0px;
@@ -107,6 +103,11 @@ a {
 
 .comment-count {
     color: #ffffff !important;
+}
+
+.comment-row {
+    margin: auto;
+    width: 98%;
 }
 
 .comment-count-index {
@@ -163,8 +164,8 @@ img.col-1 {
 
 @media screen and (max-width: 992px){
     .navbar-light .navbar-text {
-    font-size: 100%;
-    margin: 0;
+        font-size: 100%;
+        margin: 0;
     }
 }
 
@@ -174,8 +175,17 @@ img.col-1 {
     }
 }
 
-@media screen and (max-width: 576px){
-    .post-container {
+@media screen and (max-width: 768px){
+    .display-comments {
+        border-radius: 25px 25px 0px 0px;
+        padding-bottom: 40px;
+    }
+    
+    .creating-comment {
+        margin-top: -25px;
+        border-radius: 0px 0px 25px 25px;
         
-}
+    }
+
+    
 }

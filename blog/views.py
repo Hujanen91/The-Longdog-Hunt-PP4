@@ -28,7 +28,6 @@ def post_detail(request, slug):
 
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
-    comments = post.comments.all().order_by("-created_on")
     comment_count = post.comments.count()
     
     if request.method == "POST":
@@ -41,9 +40,16 @@ def post_detail(request, slug):
             messages.add_message(
                 request, messages.SUCCESS,
                 'Comment submitted successfully'
-            )
+                )
+            # Redirect to avoid resubmitting form on page refresh
+            return HttpResponseRedirect(request.path_info)
             
-    comment_form = CommentForm()
+            
+    else:        
+        comment_form = CommentForm()
+    
+    # Retrieve comments only if it's a GET request
+    comments = post.comments.filter(approved=True).order_by("-created_on")
     
     return render(
         request,
