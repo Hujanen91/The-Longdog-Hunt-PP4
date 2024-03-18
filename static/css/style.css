@@ -65,7 +65,8 @@ a {
     padding-top: 10px;
 }
 
-.masthead-container img {
+.masthead-container-img {
+    width: 98%;
     display: grid;
     border-radius: 25px;
     margin: auto;
@@ -106,6 +107,10 @@ a {
 
 .comment-count {
     color: #ffffff !important;
+}
+
+.comment-count-index {
+    justify-content: right;
 }
 
 .like-count {
@@ -161,7 +166,7 @@ img.col-1 {
 
 @media screen and (min-width: 992px){
     .post-container {
-        max-width: 760px;
+        max-width: 950px;
     }
 }
 
