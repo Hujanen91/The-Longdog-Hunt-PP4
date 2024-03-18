@@ -63,6 +63,7 @@ a {
     border-radius: 25px 25px 0px 0px;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-bottom: -1px;
 }
 
 .masthead-container-img {
@@ -71,6 +72,10 @@ a {
     border-radius: 25px;
     margin: auto;
     justify-content: center;
+}
+
+.post-title, .post-subtitle {
+    margin-left: 10px;
 }
 
 .post-content-container {
@@ -108,8 +113,8 @@ a {
 }
 
 .comment-count {
-    margin-left: 10px;
     font-size: 20px;
+    margin-left: 10px;
     color: white !important;
     
 }
@@ -196,7 +201,6 @@ img.col-1 {
 @media screen and (max-width: 768px){
     .display-comments {
         border-radius: 25px 25px 0px 0px;
-        padding-bottom: 40px;
     }
     
     .creating-comment {
