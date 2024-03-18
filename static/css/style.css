@@ -110,6 +110,10 @@ a {
 }
 
 .comment-count-index {
+    font-size: 140%;
+    margin-top: -31px;
+    margin-right: 10px;
+    display: grid;
     justify-content: right;
 }
 
