@@ -31,7 +31,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = ['localhost',
-                 'the-longdog-hunt-9f116eb214b4.herokuapp.com']
+                 'the-longdog-hunt-9f116eb214b4.herokuapp.com',
+                 '8000-hujanen91-thelongdoghun-pdyykwod2mm.ws-eu110.gitpod.io']
 
 
 # Application definition
