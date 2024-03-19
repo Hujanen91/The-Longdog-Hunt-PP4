@@ -120,6 +120,7 @@ a {
 .comment-count {
     font-size: 20px;
     margin-left: 10px;
+    padding-right: 10px;
     color: white !important;
     
 }
@@ -127,7 +128,8 @@ a {
 .like-count {
     font-size: 20px;
     padding-left: 10px;
-    color: white !important;
+    color: white;
+    display: contents;
 }
 
 .comment-author {
