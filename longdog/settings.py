@@ -30,10 +30,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://the-longdog-hunt-9f116eb214b4.herokuapp.com',
-                 '127.0.0.1',
+ALLOWED_HOSTS = ['127.0.0.1',
                  '.gitpod.io',
-                 'https://the-longdog-hunt-9f116eb214b4.herokuapp.com/']
+                 'the-longdog-hunt-9f116eb214b4.herokuapp.com']
 
 
 # Application definition
