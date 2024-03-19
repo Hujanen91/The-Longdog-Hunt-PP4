@@ -1,12 +1,7 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import About, Contact
+from .models import Contact
 
-
-
-@admin.register(About)
-class AboutAdmin(SummernoteModelAdmin):
-    summernote_fields = ('content',)
 
 # Note: admin.ModelAdmin is the standard way of registering
 #       our model with the admin panel. We do it differently
