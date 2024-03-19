@@ -17,8 +17,13 @@ a {
 }
 
 .index-post-card {
-    background-color: #4f968cb4;
-    color: #ffffff;
+    background-color:#4f968c;
+    border-radius: 25px;
+}
+
+.card {
+    background-color: #d9ebeb;
+    border: none;
 }
 
 .card-body:hover {
@@ -63,13 +68,19 @@ a {
     border-radius: 25px 25px 0px 0px;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-bottom: -1px;
 }
 
-.masthead-container img {
+.masthead-container-img {
+    width: 98%;
     display: grid;
     border-radius: 25px;
     margin: auto;
     justify-content: center;
+}
+
+.post-title, .post-subtitle {
+    margin-left: 10px;
 }
 
 .post-content-container {
@@ -88,30 +99,57 @@ a {
     border-radius: 25px;
 }
 
+.display-comments h3 {
+    margin-top: 10px;
+}
+
 .display-comments {
-    width: 62%;
-    margin-left: 18px;
+    border: none;
     color: #ffffff;
     background-color: #2e5a5485;
     border-radius: 25px 0px 0px 25px;
 }
 
 .creating-comment {
-    width: 33%;
-    margin-right: 18px;
+    border: none;
     color: #ffffff;
     background-color: #2e5a5485;
     border-radius: 0px 25px 25px 0px;
 }
 
 .comment-count {
-    color: #ffffff !important;
+    font-size: 20px;
+    margin-left: 10px;
+    color: white !important;
+    
 }
 
 .like-count {
-    color: #ffffff !important;
+    font-size: 20px;
     padding-left: 10px;
+    color: white !important;
 }
+
+.comment-author {
+    font-size: 20px;
+    font-weight: bold;
+    color:#233535;
+}
+
+.comment-row {
+    margin: auto;
+    width: 98%;
+}
+
+.comment-count-index {
+    font-size: 140%;
+    margin-top: -31px;
+    margin-right: 10px;
+    display: grid;
+    justify-content: right;
+} 
+
+
 
 .link {
     color: #914D57;
@@ -120,8 +158,8 @@ a {
 .btn {
     background-color: #914D57;
     color: #ffff;
-    border-width: 5px;
-    border-radius: 25px;
+    border-width: 2px;
+    border-radius: 10px;
     border-color: #af6c76;
     margin-bottom: 10px;
 }
@@ -129,8 +167,8 @@ a {
 .btn:hover {
     background-color: #ce919b;
     color: #000000;
-    border-width: 5px;
-    border-radius: 25px;
+    border-width: 2px;
+    border-radius: 10px;
     border-color: #914D57;
     margin-bottom: 10px;
 }
@@ -154,13 +192,27 @@ img.col-1 {
 
 @media screen and (max-width: 992px){
     .navbar-light .navbar-text {
-    font-size: 100%;
-    margin: 0;
+        font-size: 100%;
+        margin: 0;
     }
 }
 
 @media screen and (min-width: 992px){
     .post-container {
-        max-width: 760px;
+        max-width: 950px;
     }
+}
+
+@media screen and (max-width: 768px){
+    .display-comments {
+        border-radius: 25px 25px 0px 0px;
+    }
+    
+    .creating-comment {
+        margin-top: -25px;
+        border-radius: 0px 0px 25px 25px;
+        
+    }
+
+    
 }
