@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block content %}
 
 <!-- index.html content starts here -->
@@ -16,9 +17,17 @@
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                             <div class="image-container">
                                 <h2 class="card-title">{{ post.title }}</h2>
-                                    <strong class="text-secondary comment-count">
-                                        <i class="far fa-comments"></i> {{ post.comment_count }}
-                                    </strong>
+                                <div class="row">
+                                    <div class="col-12">
+                                      <strong class="text-secondary comment-count">
+                                        {% if post.comment_count > 0 %}
+                                            <i class="far fa-comments"></i> {{ post.comment_count }}
+                                        {% else %}
+                                            <i class="far fa-comments"></i>
+                                        {% endif %}
+                                      </strong>
+                                    </div>
+                                </div>
                                 <hr />
                                 <p class="card-text text-muted h6 created-on">{{ post.created_on}}</p>
                                 
@@ -68,3 +77,4 @@
 
 <!-- index.html content ends here -->
 {% endblock %}
+
