@@ -29,15 +29,15 @@ a {
     border-radius: 25px;
 }
 
-.card {
-    background-color: #d9ebeb;
-    border: none;
-}
-
-.card-body:hover {
+.index-post-card:hover {
     background-color: #a4c5c5;
     opacity: 70%;
     transition-duration: 1s;
+}
+
+.card {
+    background-color: #d9ebeb;
+    border: none;
 }
 
 .card-title {
@@ -156,9 +156,18 @@ a {
     margin-right: 10px;
     display: grid;
     justify-content: right;
-} 
+}
 
-.sign-in-container {
+.contact-container {
+    margin: auto;
+    justify-content: center;
+}
+
+.sign-in-container,
+.sign-out-container,
+.sign-up-container,
+.about-container,
+.contact-container {
     width: fit-content;
     background-color: #4f968c35;
     border-radius: 25px;
@@ -232,6 +241,10 @@ img.col-1 {
         margin-top: -25px;
         border-radius: 0px 0px 25px 25px;
         
+    }
+
+    .contact-boxes {
+        width: 80%;
     }
 
     
