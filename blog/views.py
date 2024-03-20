@@ -36,8 +36,6 @@ def post_detail(request, slug):
     post = get_object_or_404(queryset, slug=slug)
     comment_count = post.comments.count()
     
-    
-    
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
