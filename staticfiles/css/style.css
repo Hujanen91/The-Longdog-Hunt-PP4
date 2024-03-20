@@ -3,8 +3,16 @@
     background-color: white;
 }
 
+.h-100 {
+    background-color: #d9ebeb;
+}
+
 hr {
     background-color: #365050;
+}
+
+.created-on {
+    color: #000 !important;
 }
 
 .flex-shrink-0 {
@@ -41,16 +49,15 @@ a {
 }
 
 .author {
+    width: fit-content;
     font-size: 18px;
     font-weight: 400;
-    position: relative;
+    position: absolute;
     background-color: #afd9d3;
     color: #2b2b2b;
-    border-radius: 25px;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: -30px;
+    border-radius: 0px 25px 25px 0px;
+    padding: 5px 10px 5px 10px;
+    margin-top: -50px;
 }
 
 .longdog-collapse {

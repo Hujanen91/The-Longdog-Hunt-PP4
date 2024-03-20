@@ -16,11 +16,11 @@
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                             <div class="image-container">
                                 <h2 class="card-title">{{ post.title }}</h2>
-                                    <strong class="text-secondary comment-count-index">
+                                    <strong class="text-secondary comment-count">
                                         <i class="far fa-comments"></i> {{ post.comment_count }}
                                     </strong>
                                 <hr />
-                                <p class="card-text text-muted h6">{{ post.created_on}}</p>
+                                <p class="card-text text-muted h6 created-on">{{ post.created_on}}</p>
                                 
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top" src="{% static '/images/Octopus-07.webp' %}"
