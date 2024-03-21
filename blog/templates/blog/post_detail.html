@@ -47,11 +47,14 @@
           <i class="far fa-comments"></i>
         {% endif %}
       </strong>
+      <!-- Display count of likes -->
       <strong class="text-secondary">
-        {% if like_count > 0 %}
-          <button class="far fa-heart like-count"></button> {{ like_count }}
-        {% else %}
-          <button class="far fa-heart like-count"></button>
+        {% if user.is_authenticated %}
+          {% if like_count > 0 %}
+            <button class="far fa-heart like-count"></button> {{ like_count }}
+          {% else %}
+            <button class="far fa-heart like-count"></button>
+          {% endif %}
         {% endif %}
       </strong>
     </div>
