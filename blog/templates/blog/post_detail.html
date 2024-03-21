@@ -50,10 +50,11 @@
       <!-- Display count of likes -->
       <strong class="text-secondary">
         {% if user.is_authenticated %}
-          {% if like_count > 0 %}
-            <button class="far fa-heart like-count"></button> {{ like_count }}
+          {% csrf_token %}
+          {% if like_post > 0 %}
+            <button class="far fa-heart like-count"></button> {{ like_post }}
           {% else %}
-            <button class="far fa-heart like-count"></button>
+            <button class="far fa-heart like-count"></button> {{ unlike_post }}
           {% endif %}
         {% endif %}
       </strong>

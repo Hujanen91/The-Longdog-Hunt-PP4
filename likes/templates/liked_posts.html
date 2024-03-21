@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container mt-5 about-container">
+    <div class="row">
+        <div class="text-center">
+            <div class="col-12">
+                <!-- Title goes between these h2 tags -->
+                <h2>Hi friend! Here are all the posts you've liked:</h2>
+                <!-- Collect liked posts below -->
+                <a href="{% url 'liked_posts' %}"></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

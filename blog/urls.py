@@ -8,4 +8,6 @@ urlpatterns = [
          views.comment_edit, name='comment_edit'),
     path('<slug:slug>/delete_comment/<int:comment_id>',
         views.comment_delete, name='comment_delete'),
+    path('<int:post_id>/like/', views.like_post, name='like_post'),
+    path('<int:post_id>/unlike/', views.unlike_post, name='unlike_post'),
 ]

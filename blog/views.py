@@ -1,8 +1,8 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from .models import Post, Comment
+from .models import Post, Comment, Like
 from .forms import CommentForm
 
 # Create your views here.
@@ -67,6 +67,16 @@ def post_detail(request, slug):
             "comment_form": comment_form,
         },
     )
+
+def like_post(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    Like.objects.get_or_create(user=request.user, post=post)
+    return redirect('post_detail', slug=post.slug)
+
+def unlike_post(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    Like.objects.filter(user=request.user, post=post).delete()
+    return redirect('post_detail', slug=post.slug)
     
 def comment_edit(request, slug, comment_id):
     """

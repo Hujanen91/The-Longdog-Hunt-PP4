@@ -10,6 +10,8 @@ class Post(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE,
                                related_name="blog_posts")
+    #season = models.IntegerField(choices=[(x, x) for x in range(0, 3)], default=0)
+    #episode = models.IntegerField(choices=[(x, x) for x in range(0, 53)], default=0)
     featured_image = CloudinaryField('image', default='placeholder')
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
@@ -22,7 +24,13 @@ class Post(models.Model):
         
     def __str__(self):
         return f"{self.title} | written by {self.author}"
-            
+        
+
+class Like(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE,
