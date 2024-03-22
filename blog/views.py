@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404, reverse
-from django.views import View, generic
+from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from .models import Post, Comment, PostLike
+from .models import Post, Comment, Like
 from .forms import CommentForm
 
 # Create your views here.
@@ -16,12 +16,7 @@ class PostList(generic.ListView):
         # Calculate comment count for each post
         for post in context['post_list']:
             post.comment_count = post.comments.count()
-        liked = False
-        if request.user.is_authenticated and post.likes.filter(id=request.user.id).exists():
-            liked = True
-
         return context
-    
 
 def post_detail(request, slug):
     """
@@ -40,11 +35,7 @@ def post_detail(request, slug):
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     comment_count = post.comments.count()
-    liked = False
-
-    if request.user.is_authenticated and post.likes.filter(id=request.user.id).exists():
-            liked = True
-            
+    
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -76,21 +67,16 @@ def post_detail(request, slug):
             "comment_form": comment_form,
         },
     )
-    
-class PostLike(View):
-    """ View for handling post likes. """
 
-    def post(self, request, slug, *args, **kwargs):
-        """ Toggle the like status for the current user on the specified post """
-        post = get_object_or_404(Post, slug=slug)
-        if post.likes.filter(id=request.user.id).exists():
-            post.likes.remove(request.user)
-            request.user.profile.liked_posts.remove(post)
-        else:
-            post.likes.add(request.user)
-            request.user.profile.liked_posts.add(post)
+def like_post(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    Like.objects.get_or_create(user=request.user, post=post)
+    return redirect('post_detail', slug=post.slug)
 
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+def unlike_post(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    Like.objects.filter(user=request.user, post=post).delete()
+    return redirect('post_detail', slug=post.slug)
     
 def comment_edit(request, slug, comment_id):
     """
