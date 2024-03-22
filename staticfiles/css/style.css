@@ -8,12 +8,28 @@
     background-color: #d9ebeb;
 }
 
+.navbar-brand {
+    width: 75%;
+}
+
+.navbar-light,
+.navbar-text {
+    margin: 25px;
+    font-size: 115%;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.text-end {
+    padding-right: 25px;
+}
+
 hr {
     background-color: #365050;
 }
 
 .created-on {
     color: #000 !important;
+    padding-bottom: 5px;
 }
 
 .flex-shrink-0 {
@@ -47,6 +63,15 @@ a {
 
 .card-img-top {
     border-radius: 25px;
+}
+
+.post-author {
+    width: fit-content;
+    color: #000;
+    background-color: #afd9d3;
+    border-radius: 0px 25px 25px 0px;
+    padding: 5px 10px 5px 10px;
+    margin-left: -30px;
 }
 
 .author {
@@ -141,9 +166,13 @@ a {
 }
 
 .comment-author {
-    font-size: 20px;
-    font-weight: bold;
-    color:#233535;
+    font-size: 16px;
+    width: fit-content;
+    background-color: #233535be;
+    border-radius: 0px 25px 25px 0px;
+    padding: 5px 10px 5px 10px;
+    margin-left: -38px;
+    color:#ffffff;
 }
 
 .comment-row {
@@ -215,15 +244,21 @@ img.col-1 {
     margin-bottom: 3px;
 }
 
-.navbar-light .navbar-text {
-    margin: 25px;
-    font-size: 115%;
+
+
+@media screen and (max-width: 576px){
+    .like-count,
+    .comment-count {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 992px){
-    .navbar-light .navbar-text {
+    .navbar-light,
+    .navbar-text {
         font-size: 100%;
-        margin: 0;
+        margin: 25px;
+        padding: 20px;
     }
 }
 
@@ -237,15 +272,19 @@ img.col-1 {
     .display-comments {
         border-radius: 25px 25px 0px 0px;
     }
-    
     .creating-comment {
         margin-top: -25px;
-        border-radius: 0px 0px 25px 25px;
-        
+        border-radius: 0px 0px 25px 25px;    
     }
 
     .contact-boxes {
         width: 80%;
+    }
+    .navbar-light,
+    .navbar-text {
+        font-size: 100%;
+        margin: 0;
+        border-radius: 0px;
     }
 
     
