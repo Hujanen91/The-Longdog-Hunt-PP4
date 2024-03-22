@@ -10,6 +10,7 @@
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ post.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
+                
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
             <div class="masthead-image">
@@ -20,6 +21,7 @@
               <img src="{{ post.featured_image.url }}" class="scale masthead-container-img"
                   alt="{{ post.title }}">
               {% endif %}
+              <p class="post-subtitle">Season {{ post.season }} | Episode {{ post.episode }}</p>
             </div>
         </div>
     </div>
@@ -51,10 +53,10 @@
       <strong class="text-secondary">
         {% if user.is_authenticated %}
           {% csrf_token %}
-          {% if like_post > 0 %}
-            <button class="far fa-heart like-count"></button> {{ like_post }}
+          {% if likes > 0 %}
+            <button class="far fa-heart like-count"></button> {{ likes }}
           {% else %}
-            <button class="far fa-heart like-count"></button> {{ unlike_post }}
+            <button class="far fa-heart like-count"></button>
           {% endif %}
         {% endif %}
       </strong>

@@ -8,12 +8,17 @@
     background-color: #d9ebeb;
 }
 
+.navbar-brand {
+    width: 75%;
+}
+
 hr {
     background-color: #365050;
 }
 
 .created-on {
     color: #000 !important;
+    padding-bottom: 5px;
 }
 
 .flex-shrink-0 {
@@ -215,13 +220,22 @@ img.col-1 {
     margin-bottom: 3px;
 }
 
-.navbar-light .navbar-text {
+.navbar-light,
+.navbar-text {
     margin: 25px;
     font-size: 115%;
 }
 
+@media screen and (max-width: 576px){
+    .like-count,
+    .comment-count {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 992px){
-    .navbar-light .navbar-text {
+    .navbar-light,
+    .navbar-text {
         font-size: 100%;
         margin: 0;
     }
