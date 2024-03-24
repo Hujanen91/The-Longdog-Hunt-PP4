@@ -36,7 +36,13 @@
                                     </div>
                                 </div>
                                 <hr />
-                                <p class="card-text text-muted h6 created-on">{{ post.created_on}}  ||  Season {{ post.season }} Episode {{ post.episode }}</p>
+                                {% if post.season != None %}
+                                    <p class="card-text text-muted h6 created-on">
+                                        {{ post.created_on}}  ||  Season {{ post.season }} Episode {{ post.episode }}</p>
+                                {% else %}
+                                    <p class="card-text text-muted h6 created-on">
+                                        {{ post.created_on}}</p>
+                                {% endif %}
                                 
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top" src="{% static '/images/Octopus-07.webp' %}"
