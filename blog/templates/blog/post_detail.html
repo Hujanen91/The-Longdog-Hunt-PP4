@@ -51,17 +51,34 @@
           <i class="far fa-comments"></i>
         {% endif %}
       </strong>
+    </div>
       <!-- Display count of likes -->
+    <div class="col-12">
       <strong class="text-secondary">
         {% if user.is_authenticated %}
+        <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
           {% csrf_token %}
-          {% if like_post > 0 %}
-            <button class="far fa-heart like-count" id="likeButton"></button> {{ like_post }}
+          {% if liked %}
+          
+          <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+             class="fas fa-heart"></i></button>
+
           {% else %}
-            <button class="far fa-heart like-count"></button> {{ unlike_post }}
+
+          <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+            class="far fa-heart"></i></button>
+
           {% endif %}
+
+        </form>
+        {% else %}
+
+        <span class="text-secondary"><i class="far fa-heart"></i></span>
         {% endif %}
-      </strong>
+      <span class="text-secondary"> {{ post.number_of_likes }} </span>
+      </strong> 
+
+    </div>
     </div>
     <div class="col-12">
       <hr>

@@ -35,6 +35,9 @@ def post_detail(request, slug):
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     comment_count = post.comments.count()
+    liked = False
+    if post.likes.filter(id=request.user.id).exists():
+            liked = True
     
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
@@ -63,11 +66,25 @@ def post_detail(request, slug):
         "blog/post_detail.html",
         {
             "post": post,
+            "liked": liked,
             "comments": comments,
             "comment_count": comment_count,
             "comment_form": comment_form,
         },
     )
+
+class PostLike(View):
+    
+    def post(self, request, slug):
+        post = get_object_or_404(Post, slug=slug)
+        
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+        
+        
 
     
 def comment_edit(request, slug, comment_id):
