@@ -9,7 +9,10 @@
                 <!-- Title goes between these h2 tags -->
                 <h2>Hi friend! Here are all the posts you've liked:</h2>
                 <!-- Collect liked posts below -->
-                <a href="{% url 'liked_posts' %}"></a>
+                <ul>
+                    {% for Like in likes %}
+                        <li>{{ like.post.title }}</li>
+                    {% endfor %}
             </div>
         </div>
     </div>
