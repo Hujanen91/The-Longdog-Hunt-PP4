@@ -3,8 +3,9 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<main class="col-12 col-md-9 col-lg-6 post-container post-content-container container">
 <div class="masthead">
-    <div class="post-container container masthead-container">
+    <div class>
         <div class="row g-0">
             <div class="col-md-12 masthead-text">
                 <!-- Post title goes in these h1 tags -->
@@ -27,7 +28,7 @@
     </div>
 </div>
 
-<div class="container post-container post-content-container">
+<div class>
     <div class="row">
         <div class="post-container card mb-4 mt-3 left top post-content-text">
             <div class="card-body">
@@ -43,8 +44,8 @@
     
      <!-- Displaying count of comments -->
   <div class="row">
-    <div class="col-12">
-      <strong class="text-secondary comment-count">
+    <div class="comment-count">
+      <strong>
         {% if comment_count > 0 %}
           <i class="far fa-comments"></i> {{ comment_count }}
         {% else %}
@@ -53,19 +54,19 @@
       </strong>
     </div>
       <!-- Display count of likes -->
-    <div class="col-12">
-      <strong class="text-secondary">
+    <div class="like-count">
+      <strong>
         {% if user.is_authenticated %}
         <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
           {% csrf_token %}
           {% if liked %}
           
-          <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+          <button type="submit" name="blogpost_id" value="{{post.slug}}" class="like-count"><i
              class="fas fa-heart"></i></button>
 
           {% else %}
 
-          <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+          <button type="submit" name="blogpost_id" value="{{post.slug}}" class="like-count"><i
             class="far fa-heart"></i></button>
 
           {% endif %}
@@ -73,9 +74,9 @@
         </form>
         {% else %}
 
-        <span class="text-secondary"><i class="far fa-heart"></i></span>
+        <span class=""><i class="far fa-heart"></i></span>
         {% endif %}
-      <span class="text-secondary"> {{ post.number_of_likes }} </span>
+      <span class=""> {{ post.number_of_likes }} </span>
       </strong> 
 
     </div>
@@ -85,7 +86,7 @@
     </div>
   </div>
   <!-- Displaying Comments -->
-  <div class="row comment-row">
+  <div class="row comment-row container">
     <div class="col-md-8 card mb-4 display-comments">
       <h3>Comments:</h3>
       <div class="card-body">
@@ -165,7 +166,7 @@
     </div>
   </div>
 </div>
-
+</main>
 {% endblock content %}
 
 {% block extras %}
