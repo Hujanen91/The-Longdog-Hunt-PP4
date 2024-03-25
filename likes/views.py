@@ -5,10 +5,6 @@ from .models import Like
 
 # Create your views here.
 def user_likes(request):
-    
-    likes = Like.objects.all()
-    return render(
-        request,
-        "liked_posts.html",
-        {"likes": likes},
-    )
+    # Retrieve liked posts associated with the current user
+    liked_posts = Like.objects.filter(user=request.user).select_related('post')
+    return render(request, "liked_posts.html", {"liked_posts": liked_posts})

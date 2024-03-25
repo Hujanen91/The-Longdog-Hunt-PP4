@@ -10,9 +10,11 @@
                 <h2>Hi friend! Here are all the posts you've liked:</h2>
                 <!-- Collect liked posts below -->
                 <ul>
-                    {% for Like in likes %}
+                    {% for like in liked_posts %}
+                    
                         <li>{{ like.post.title }}</li>
                     {% endfor %}
+                </ul>
             </div>
         </div>
     </div>
