@@ -45,14 +45,15 @@
      <!-- Displaying count of comments -->
   <div class="row">
     <div class="comment-count">
-      <strong>
-        {% if comment_count > 0 %}
-          <i class="far fa-comments"></i> {{ post.comment_count }}
+      <strong class="comment-count">
+        {% if post.comment_count > 0 %}
+            <i class="far fa-comments"></i> {{ post.comment_count }}
         {% else %}
-          <i class="far fa-comments"></i>
+            <i class="far fa-comments"></i> {{ post.comment_count }}
         {% endif %}
       </strong>
     </div>
+
       <!-- Display count of likes -->
     <div class="like-count">
       <strong>
@@ -70,7 +71,7 @@
             class="far fa-heart"></i></button>
 
           {% endif %}
-
+            
         </form>
         {% else %}
 
@@ -81,10 +82,13 @@
 
     </div>
     </div>
+
     <div class="col-12">
       <hr>
     </div>
+
   </div>
+
   <!-- Displaying Comments -->
   <div class="row comment-row container">
     <div class="col-md-8 card mb-4 display-comments">
@@ -121,6 +125,7 @@
         {% endfor %}
       </div>
     </div>
+
     <!-- Creating New Comments -->
     <div class="col-md-4 card mb-4 creating-comment">
       <div class="card-body">

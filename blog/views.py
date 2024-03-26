@@ -39,6 +39,9 @@ def post_detail(request, slug):
     if post.likes.filter(id=request.user.id).exists():
             liked = True
     
+    print("Debug: Liked status:", liked)
+    print("Debug: Comment count:", comment_count)
+    
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():

@@ -4,6 +4,7 @@
 
 <div class="container mt-5 about-container">
     <div class="row">
+        
         <div class="text-center">
             <div class="col-12">
                 <!-- Title goes between these h2 tags -->
@@ -11,7 +12,6 @@
                 <!-- Collect liked posts below -->
                 <ul>
                     {% for like in liked_posts %}
-                    
                         <li>{{ like.post.title }}</li>
                     {% endfor %}
                 </ul>
