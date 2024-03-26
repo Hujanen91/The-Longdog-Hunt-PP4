@@ -22,7 +22,7 @@ class Post(models.Model):
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
     likes = models.ManyToManyField(
-        User, related_name='blogpost_like', blank=True)
+        User, related_name='liked_posts', blank=True)
     
     class Meta:
         ordering = ["-created_on"]
