@@ -153,7 +153,7 @@ a {
 
 .comment-count {
     margin-left: 10px;
-    width: 8%;
+    width: fit-content;
     font-size: 20px;
     color: white !important;
 }
@@ -247,10 +247,6 @@ img.col-1 {
 
 
 @media screen and (max-width: 576px){
-    .comment-count
-     {
-        width: 20%;
-    }
 }
 
 @media screen and (max-width: 768px){
@@ -278,18 +274,12 @@ img.col-1 {
         margin: 25px;
         padding: 20px;
     }
-    .comment-count {
-        width: 15%;
-    }
 }
 
 @media screen and (min-width: 992px){
     .post-container {
         max-width: 950px;
     } 
-    .comment-count {
-        width: 15%;
-    }
 }
 
 
