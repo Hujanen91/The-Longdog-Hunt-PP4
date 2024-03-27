@@ -6,6 +6,7 @@
 
 .h-100 {
     background-color: #d9ebeb;
+    width: fit-content;
 }
 
 .navbar-brand {
@@ -16,7 +17,8 @@
 .navbar-text {
     margin: 25px;
     font-size: 115%;
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 25px 25px 0px 0px;
+    padding: 5px 5px;
 }
 
 .text-end {
@@ -202,7 +204,13 @@ a {
     background-color: #4f968c35;
     border-radius: 25px;
     color: rgb(0, 0, 0);
-    padding: 15px 0px;
+    padding: 20px
+}
+
+.sign-in-container label,
+.sign-out-container label,
+.sign-up-container label {
+    display: grid;
 }
 
 .alert-dismissible {
@@ -211,7 +219,7 @@ a {
 }
 
 .link {
-    color: #914D57;
+    color: #c04c5d;
 }
 
 .btn {
@@ -247,7 +255,12 @@ img.col-1 {
 
 
 @media screen and (max-width: 576px){
-}
+    .navbar-light,
+    .navbar-text {
+        margin: 0px;
+        padding: 0px;
+    }
+}   
 
 @media screen and (max-width: 768px){
     .display-comments {
@@ -264,16 +277,10 @@ img.col-1 {
     .navbar-text {
         font-size: 100%;
         margin: 0;
-        border-radius: 0px;
+        border-radius: px;
     }
 
 @media screen and (max-width: 992px){
-    .navbar-light,
-    .navbar-text {
-        font-size: 100%;
-        margin: 25px;
-        padding: 20px;
-    }
 }
 
 @media screen and (min-width: 992px){
