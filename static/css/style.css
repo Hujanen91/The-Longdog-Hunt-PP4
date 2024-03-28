@@ -179,7 +179,8 @@ a {
 
 .comment-row {
     margin: auto;
-    width: 98%;
+    width: 100%;
+    padding: 0px;
 }
 
 .comment-count-index {
