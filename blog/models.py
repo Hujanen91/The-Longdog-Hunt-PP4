@@ -15,7 +15,7 @@ class Post(models.Model):
                                related_name="blog_posts")
     season = models.IntegerField(choices=season_choices, default=None, null=True, blank=True)
     episode = models.IntegerField(choices=episode_choices, default=None, null=True, blank=True)
-    featured_image = CloudinaryField('image', default='placeholder')
+    featured_image = CloudinaryField('image', default='placeholder', blank=True)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)

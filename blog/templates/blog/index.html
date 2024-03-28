@@ -30,12 +30,11 @@
                                       <!-- Like Counts -->
                                       <strong class="like-count">
                                         {% if post.number_of_likes > 0 %}
-                                          <i class="far fa-heart"></i> {{ post.number_of_likes }}
+                                            <i class="far fa-heart"></i> {{ post.number_of_likes }}
                                           {% else %}
 
-                                          <span class=""><i class="far fa-heart"></i> </span>
+                                            <i class="far fa-heart"> {{ post.number_of_likes }}</i>
                                           {% endif %}
-                                        <span class="">  </span>
                                       </strong>
                                     </div>
                                 </div>
@@ -49,7 +48,7 @@
                                 {% endif %}
                                 
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top" src="{% static '/images/Octopus-07.webp' %}"
+                                <img class="card-img-top" src="{% static '/images/blog_images/File-01-color-1.png' %}"
                                     alt="image displayed on index from blogpost">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}"
