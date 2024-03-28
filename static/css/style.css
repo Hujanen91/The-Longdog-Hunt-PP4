@@ -6,7 +6,7 @@
 
 .h-100 {
     background-color: #d9ebeb;
-    width: fit-content;
+    width: 100%;
 }
 
 .navbar-brand {
@@ -201,7 +201,6 @@ a {
 .sign-up-container,
 .about-container,
 .contact-container {
-    width: fit-content;
     background-color: #4f968c35;
     border-radius: 25px;
     color: rgb(0, 0, 0);
@@ -261,7 +260,32 @@ img.col-1 {
         margin: 0px;
         padding: 0px;
     }
-}   
+    .contact-boxes {
+        width: 90%;
+    }
+    .sign-in-container,
+    .sign-out-container,
+    .sign-up-container,
+    .about-container,
+    .contact-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px){
+    .contact-boxes {
+        width: 80%;
+    }
+    .sign-in-container,
+    .sign-up-container,
+    .about-container,
+    .contact-container {
+        width: 60%;
+    }
+    .sign-out-container {
+        width: 40%;
+    }
+}
 
 @media screen and (max-width: 768px){
     .display-comments {
@@ -271,14 +295,11 @@ img.col-1 {
         margin-top: -25px;
         border-radius: 0px 0px 25px 25px;    
     }
-    .contact-boxes {
-        width: 80%;
-    }
     .navbar-light,
     .navbar-text {
         font-size: 100%;
         margin: 0;
-        border-radius: px;
+        border-radius: 0px;
     }
 
 @media screen and (max-width: 992px){
