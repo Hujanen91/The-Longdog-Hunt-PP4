@@ -41,6 +41,7 @@ hr {
 
 a {
     text-decoration: none;
+    color: #914D57;
 }
 
 .index-post-card {
@@ -58,9 +59,26 @@ a {
     background-color: #d9ebeb;
     border: none;
 }
+/* .main-liked-posts {
+    background-color: #4f968c;
+    border-radius: 25px;
+    padding: 10px;
+    display: grid;
+} */
 
 .card-title {
-    color: #000000ad;
+    color: #365050;
+    background-color: #afd9d3;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 0px 25px 25px 0px;
+    margin-left: -18px;
+}
+
+.card-title-liked-posts {
+    color: #000000;
+    background-color: #afd9d3;
+    width: fit-content;
 }
 
 .card-img-top {
@@ -264,11 +282,13 @@ img.col-1 {
         width: 90%;
     }
     .sign-in-container,
-    .sign-out-container,
     .sign-up-container,
     .about-container,
     .contact-container {
         width: 100%;
+    }
+    .sign-out-container {
+        width: 80%;
     }
 }
 
