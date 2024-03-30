@@ -38,6 +38,10 @@ def post_detail(request, slug):
     liked = False
     if post.likes.filter(id=request.user.id).exists():
             liked = True
+            messages.add_message(
+                request, messages.SUCCESS,
+                'You have successfully liked this post!'
+                )
     
     print("Debug: Liked status:", liked)
     print("Debug: Comment count:", comment_count)
@@ -83,6 +87,11 @@ class PostLike(View):
         
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
+            messages.add_message(
+                request, messages.SUCCESS,
+                'You have successfully unliked this post!'
+                )
+    
         else:
             post.likes.add(request.user)
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
