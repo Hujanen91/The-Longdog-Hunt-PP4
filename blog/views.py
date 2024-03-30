@@ -38,10 +38,6 @@ def post_detail(request, slug):
     liked = False
     if post.likes.filter(id=request.user.id).exists():
             liked = True
-            messages.add_message(
-                request, messages.SUCCESS,
-                'You have successfully liked this post!'
-                )
     
     print("Debug: Liked status:", liked)
     print("Debug: Comment count:", comment_count)
@@ -94,6 +90,10 @@ class PostLike(View):
     
         else:
             post.likes.add(request.user)
+            messages.add_message(
+                request, messages.SUCCESS,
+                'You have successfully liked this post!'
+                )
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
         
         
