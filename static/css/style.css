@@ -112,7 +112,8 @@ a {
 }
 
 .about-profile-img {
-    border-radius: 50px ;
+    border-radius: 25px;
+    padding: 15px;
 }
 
 .masthead-container {
