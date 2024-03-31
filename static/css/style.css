@@ -59,12 +59,6 @@ a {
     background-color: #d9ebeb;
     border: none;
 }
-/* .main-liked-posts {
-    background-color: #4f968c;
-    border-radius: 25px;
-    padding: 10px;
-    display: grid;
-} */
 
 .card-title {
     color: #365050;
@@ -73,6 +67,14 @@ a {
     padding: 5px 15px;
     border-radius: 0px 25px 25px 0px;
     margin-left: -18px;
+}
+
+.card-title-likes {
+    color: #365050;
+    width: fit-content;
+    padding: 5px 15px;
+    text-align: center;
+    margin: auto;
 }
 
 .card-title-liked-posts {
