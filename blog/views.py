@@ -5,18 +5,20 @@ from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
 
+
 # Create your views here.
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
     template_name = "blog/index.html"
     paginate_by = 6
-    
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         # Calculate comment count for each post
         for post in context['post_list']:
             post.comment_count = post.comments.count()
         return context
+
 
 def post_detail(request, slug):
     """
@@ -34,11 +36,13 @@ def post_detail(request, slug):
 
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
+    comments = post.comments.order_by("-created_on")
     comment_count = post.comments.count()
     liked = False
-    if post.likes.filter(id=request.user.id).exists():
-            liked = True
     
+    if post.likes.filter(id=request.user.id).exists():
+        liked = True
+
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -52,15 +56,9 @@ def post_detail(request, slug):
                 )
             # Redirect to avoid resubmitting form on page refresh
             return HttpResponseRedirect(request.path_info)
-            
-            
-    else:        
+    else:
         comment_form = CommentForm()
-    
-    # Retrieve comments only if it's a GET request
-    comments = post.comments.order_by("-created_on")
-    
-            
+
     return render(
         request,
         "blog/post_detail.html",
@@ -73,18 +71,19 @@ def post_detail(request, slug):
         },
     )
 
+
 class PostLike(View):
-    
+
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
-        
+
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
             messages.add_message(
                 request, messages.SUCCESS,
                 'You have successfully unliked this post!'
                 )
-    
+
         else:
             post.likes.add(request.user)
             messages.add_message(
@@ -92,10 +91,8 @@ class PostLike(View):
                 'You have successfully liked this post!'
                 )
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-        
-        
 
-    
+
 def comment_edit(request, slug, comment_id):
     """
     view to edit comments
