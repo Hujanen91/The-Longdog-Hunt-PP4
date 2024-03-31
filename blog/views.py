@@ -58,7 +58,7 @@ def post_detail(request, slug):
         comment_form = CommentForm()
     
     # Retrieve comments only if it's a GET request
-    comments = post.comments.filter(approved=True).order_by("-created_on")
+    comments = post.comments.order_by("-created_on")
     
             
     return render(
