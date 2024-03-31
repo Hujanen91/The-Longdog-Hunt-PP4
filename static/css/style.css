@@ -156,6 +156,10 @@ a {
     border-radius: 25px;
 }
 
+.modal-content {
+    color: #365050;
+}
+
 .display-comments h3 {
     margin-top: 10px;
 }
