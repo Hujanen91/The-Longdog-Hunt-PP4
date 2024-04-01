@@ -15,20 +15,21 @@ __Fully responsive navbar with links to:__
     - Register section
     - Login section
     - Contact Section
+    - Likes (If user is autenticated)
 
 __Logo hyperlinked to home page:__
-![Logo](static/images/readme_files/File-01-color-1.png)
+![Logo](static/images/blog_images/File-01-color-1.png)
 
 Featured on all pages across the site.
 
-The navbar dapts to if user is authenticated or not (When logged in Login and Register will be hidden and Logout will be displayed in the navbar.)
+The navbar will adapt to if user is authenticated or not (When logged in Login and Register will be hidden and Logout will be displayed in the navbar.)
 
 __Navbar for non-authenticated users__:
 
-![Navbar non auth]()
+![Navbar non auth](static/images/readme_files/navbar-links.png)
 __Navbar for authenticated users__:
 
-![Navbar auth]()
+![Navbar auth](static/images/readme_files/navbar-authenticated.png)
 
 ___Purpose of feature:___
 Provide users with an easy and straight-forward way to navigate the site
@@ -39,7 +40,7 @@ Provide users with an easy and straight-forward way to navigate the site
 Featured on all pages across the site.
 The footer contains links to my personal GitHub, Instagram and Facebook.
 
-![Footer]()
+![Footer](static/images/readme_files/footer.png)
 
 ___Purpose of feature:___
 Provide users with a way to connect with me and check out my GitHub profile and social media accounts.
@@ -54,7 +55,7 @@ __The Home page consists of:__
 
 __Blog Section__
 
-The Blog Section features the blogposts created by the author and will be displayed the same no matter if the user is loged in or not.
+The Blog Section features the blogposts created by the author and will be displayed the same no matter if the user is logged in or not.
 
 ![Blog Section]()
 
