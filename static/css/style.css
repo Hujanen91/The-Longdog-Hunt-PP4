@@ -310,7 +310,8 @@ img.col-1 {
     .sign-in-container,
     .sign-up-container,
     .about-container,
-    .contact-container {
+    .contact-container,
+    .liked-posts-container {
         width: 100%;
     }
     .sign-out-container {
