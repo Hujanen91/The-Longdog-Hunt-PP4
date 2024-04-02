@@ -2,39 +2,62 @@
 
 Return back to the [README.md](README.md) file.
 
+___Case: Accessing authorization required links without logging in:___
+
+| Link                                      | Expected Result          | Actual Result                  | Resolved by                               |
+|-------------------------------------------|--------------------------|--------------------------------|------------------------------------------|
+| [http://127.0.0.1:8000/profile_page/](http://127.0.0.1:8000/profile_page/) | Redirect to home page   | Server Error (500)            | Check user authenticated in associated view |
+| [http://127.0.0.1:8000/project_submission/](http://127.0.0.1:8000/project_submission/) | Redirect to home page   | Project submission page loaded  | Check user authenticated in associated view |
+| [http://127.0.0.1:8000/project_update/14/](http://127.0.0.1:8000/project_update/14/) | Redirect to home page   | Project update page loaded      | Check user authenticated and post author in associated view |
+| [http://127.0.0.1:8000/delete_post/14/](http://127.0.0.1:8000/delete_post/14/) | Redirect to home page   | Server Error (500)            | Check user authenticated and post author in associated view |
+| [http://127.0.0.1:8000/post_comment/14/](http://127.0.0.1:8000/post_comment/14/) | Redirect to home page   | Server Error (500)            | Check user authenticated in associated view |
+| [http://127.0.0.1:8000/like_post/14/](http://127.0.0.1:8000/like_post/14/) | Redirect to home page   | Server Error (500)            | Check user authenticated in associated view |
+| [http://127.0.0.1:8000/delete_comment/10/14/](http://127.0.0.1:8000/delete_comment/10/14/) | Redirect to home page   | Server Error (500)            | Check user authenticated and comment owner in associated view |
+
+___Case: Inserting invalid or no data during project submission:___
+
+| Test                                          | Expected Result                  | Actual Result                                       | Resolved by                               |
+|-----------------------------------------------|----------------------------------|-----------------------------------------------------|------------------------------------------|
+| Upload file larger than 10MB                  | Error message                    | Server Error (500)                                  | Write js script to validate inputs       |
+| Upload file + toggle generate from link       | Error message / Toggle not available when file uploaded | Post uploaded using image generated from link | Write js script to validate inputs       |
+| Post using a non-GitHub repo link in field    | Error message                    | Post uploaded successfully                           | Write js script to validate inputs       |
+
+___Case: Inserting invalid or no data during update project:___
+
+| Test                                          | Expected Result                  | Actual Result                                       | Resolved by                               |
+|-----------------------------------------------|----------------------------------|-----------------------------------------------------|------------------------------------------|
+| Upload file larger than 10MB                  | Error message                    | Server Error (500)                                  | Write js script to validate inputs       |
+| Upload file + toggle generate from link       | Error message / Toggle not available when file uploaded | Post uploaded using image generated from link | Write js script to validate inputs       |
+| Post using a non-GitHub repo link in field    | Error message                    | Post uploaded successfully                           | Write js script to validate inputs       | -->
+
+
 ## Code Validation
-### Python
+__HTML & CSS__
 
-I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.<br>
-Errors where found but it was simple errors like:<br>
-- E501 line too long (82 > 79 characters)
-- E128 continuation line under-indented for visual indent
-- E305 expected 2 blank lines after class or function definition, found 0
-- E275 missing whitespace after keyword
-- W293 blank line contains whitespace
-- W291 trailing whitespace
-- W292 no newline at end of file
+All html and css files ran through the [Official W3C validator](https://validator.w3.org/)
 
-Small errors with simple fixes.
-After fixing the errors the code validates without errors
+___CSS___: All files valid
 
-| File | Screenshot | Notes |
-| --- | --- | --- |
-| run.py | ![screenshot](docs/validation_clear.png) | All clear, no errors found. |
-| riddles.py | ![screenshot](docs/validation_clear_riddles.png) | All clear, no errors found. |
+___HTML___: All html passed except for the blogpost page and signup page. 
+Errors displayed below are errors caused by Allauth and by Summernote and is nothing I can do anythin about considering the errors are caused by code from other packages and not my direct code.
+Errors ignored since they are not caused by my code and make no impact on the functionality but might impact functionality and the visual aspects if resolved.
 
-## Defensive Programming
+__Python__
 
-- Users must enter a valid letter/word/string when prompted otherwise one of the things underneath will happen.
+All files ran through Code Institutes [Python Linter](https://pep8ci.herokuapp.com/#)
 
-| Screenshot | Notes |
-| --- | --- |
-| ![screenshot](docs/name_input_lenght.png) | You cannot enter anything other than letters for your name, it needs to be more than 3 letters and you cannot break anything by writing any special characters |
-| ![screenshot](docs/option_input_number_required.png) | You can't write 3 or higher numbers on options. You can't write letters or special characters either and they wont break anything |
-| ![screenshot](docs/invalid_input_riddle.png) |  You can't write letters or numbers higher than 4 when answering the riddles |
+Every .py file has passed without any issues or errors.
 
-- The application has been tested numerous times to ensure that the user cannot break it by inputting the wrong commands.
 
+__JavaScript__
+
+All files run through the [JSHint Linter](https://jshint.com/)
+
+Javascript file passed without any issues or errors.
+
+__Lighthouse__
+
+All pages were analyzed by Lighthouse: [See reports]()
 
 
 ## Bugs
