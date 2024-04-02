@@ -71,7 +71,7 @@ a {
 }
 
 .card-title-likes {
-    color: #365050;
+    color: #1b1b1b;
     width: fit-content;
     padding: 5px 15px;
     text-align: center;
@@ -148,6 +148,7 @@ a {
 
 .post-title, .post-subtitle {
     margin-left: 10px;
+    color: #1b1b1b;
 }
 
 .post-content-container {
@@ -237,7 +238,15 @@ a {
 .sign-up-container,
 .about-container,
 .contact-container {
-    background-color: #4f968c35;
+    background-color: #4f968c;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    padding: 20px
+}
+
+.liked-posts-container {
+    width: 50%;
+    background-color: #4f968c;
     border-radius: 25px;
     color: rgb(0, 0, 0);
     padding: 20px
@@ -288,10 +297,6 @@ img.col-1 {
     margin-bottom: 3px;
 }
 
-@media screen and (max-width: 400px){
-
-}
-
 
 @media screen and (max-width: 576px){
     .navbar-light,
@@ -313,6 +318,9 @@ img.col-1 {
     }
     .author {
         display: none;
+    }
+    #submitButton {
+        font-size: 15px;
     }
 }
 

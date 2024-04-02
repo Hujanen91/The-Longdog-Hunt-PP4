@@ -4,7 +4,7 @@
 
 <main>
     <h2 class="text-center">Hi {{ user }}!<br> Here are all the posts you've liked:</h2>
-    <div class="container mt-5 about-container">
+    <div class="container mt-5 liked-posts-container">
         <div class="row">
             {% for liked_post in liked_posts %}  
             <div class="text-center">
@@ -25,7 +25,7 @@
                         </div>
 
                         <h2 class="card-title-likes">{{ liked_post.title }}</h2>
-                        <p class="card-text text-muted h6">{{ liked_post.created_on }} <i
+                        <p class="card-text text-muted created-on h6">{{ liked_post.created_on }} <i
                                 class="far fa-heart"></i> {{ liked_post.number_of_likes }}</p>
                         </a>
                         <hr>
@@ -34,21 +34,6 @@
                 </div>
             </div>
         </div>
-        {% if is_paginated %}
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-            {% if page_obj.has_previous %}
-            <li>
-                <a href="?page={{ page_obj.previous_page_number }}"
-                class="page-link btn">&laquo; PREV</a>
-            </li>
-            {% endif %}
-            {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link btn"> NEXT &raquo;</a></li>
-            {% endif %}
-        </ul>
-    </nav>
-    {% endif %}
     </div>
     
 </main>
