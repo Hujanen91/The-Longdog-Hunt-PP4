@@ -156,7 +156,7 @@ Provide users with a way to register an account on the site.
 <a name="Blogpost-page"></a>
 ### __Blogpost page__
 
-![Blogpost page](img)
+![Blogpost page](static/images/readme_files/docs/blogpost_detail_view.gif)
 
 __The Blogpost page consists of:__
 
@@ -172,7 +172,7 @@ Provide users with a way to see the specific blogposts and give logged in users 
 
 
 
-<!-- __Like button__
+__Like button__
 
 The like button, placed on the right end of the screen in height with the project title, allows users to like or unlike a post.
 
@@ -192,57 +192,11 @@ _Additional_: The delete button displays a modal requiring the user to confirm d
 
 __Manual testing__
 
-<!-- _Tests done with DEBUG = False in settings.py_
+The website has been manually tested and everything has been documented in the testing.md file.
 
-___Case: Accessing authorization required links without logging in:___
-
-| Link                                      | Expected Result          | Actual Result                  | Resolved by                               |
-|-------------------------------------------|--------------------------|--------------------------------|------------------------------------------|
-| [http://127.0.0.1:8000/profile_page/](http://127.0.0.1:8000/profile_page/) | Redirect to home page   | Server Error (500)            | Check user authenticated in associated view |
-| [http://127.0.0.1:8000/project_submission/](http://127.0.0.1:8000/project_submission/) | Redirect to home page   | Project submission page loaded  | Check user authenticated in associated view |
-| [http://127.0.0.1:8000/project_update/14/](http://127.0.0.1:8000/project_update/14/) | Redirect to home page   | Project update page loaded      | Check user authenticated and post author in associated view |
-| [http://127.0.0.1:8000/delete_post/14/](http://127.0.0.1:8000/delete_post/14/) | Redirect to home page   | Server Error (500)            | Check user authenticated and post author in associated view |
-| [http://127.0.0.1:8000/post_comment/14/](http://127.0.0.1:8000/post_comment/14/) | Redirect to home page   | Server Error (500)            | Check user authenticated in associated view |
-| [http://127.0.0.1:8000/like_post/14/](http://127.0.0.1:8000/like_post/14/) | Redirect to home page   | Server Error (500)            | Check user authenticated in associated view |
-| [http://127.0.0.1:8000/delete_comment/10/14/](http://127.0.0.1:8000/delete_comment/10/14/) | Redirect to home page   | Server Error (500)            | Check user authenticated and comment owner in associated view |
-
-___Case: Inserting invalid or no data during project submission:___
-
-| Test                                          | Expected Result                  | Actual Result                                       | Resolved by                               |
-|-----------------------------------------------|----------------------------------|-----------------------------------------------------|------------------------------------------|
-| Upload file larger than 10MB                  | Error message                    | Server Error (500)                                  | Write js script to validate inputs       |
-| Upload file + toggle generate from link       | Error message / Toggle not available when file uploaded | Post uploaded using image generated from link | Write js script to validate inputs       |
-| Post using a non-GitHub repo link in field    | Error message                    | Post uploaded successfully                           | Write js script to validate inputs       |
-
-___Case: Inserting invalid or no data during update project:___
-
-| Test                                          | Expected Result                  | Actual Result                                       | Resolved by                               |
-|-----------------------------------------------|----------------------------------|-----------------------------------------------------|------------------------------------------|
-| Upload file larger than 10MB                  | Error message                    | Server Error (500)                                  | Write js script to validate inputs       |
-| Upload file + toggle generate from link       | Error message / Toggle not available when file uploaded | Post uploaded using image generated from link | Write js script to validate inputs       |
-| Post using a non-GitHub repo link in field    | Error message                    | Post uploaded successfully                           | Write js script to validate inputs       | -->
+Click here to go to: [Testing and validation](testing.md)
 
 
-__Unit testing__
-
-<!-- Unit tests were written using PyTest and Selenium since Seleniums abillity to interact directly with the browser better reflects how the user actually would interact with the site. Tests were written with the AAA(Arrange, Act, Assert) principle in mind.
-
-Unit test files:
-
-    1. test_noauth_protection.py
-        - Tests access to authorization required url routes when user is not authenticated
-    2. test_auth.py
-        - Tests sign up functionality
-        - Tests login functionality
-        - Tests access to profile page and project submission page when logged in
-    3. test_misc.py
-        - Tests access to login and signup page when already logged in
-    4. test_like_comment.py
-        - Tests like / unlike functionality
-        - Tests comment / delete comment functionality
-    5. test_submission_update.py
-        - Tests invalid inputs in submission form
-        - Tests invalid inputs in update project form -->
 
 ## Validators
 
