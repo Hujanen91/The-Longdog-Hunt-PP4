@@ -271,23 +271,6 @@ os.environ["THUMIO_AUTH"]=YOUR_THUMIO_AUTH_KEY
 
 ## Credits
 
-<!-- __API's used__:
-
-[GitHub' REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28): For fetching Readme.md file for Readme section in [Project page](#project-page).
-
-[Thum.io's URL API](https://www.thum.io/documentation/api/url): For generating screenshots of provided links during project submission.
-
-__Libraries and frameworks__:
-
-[Bootstrap](https://getbootstrap.com/): CSS framework used.
-
-[Django](https://www.djangoproject.com/): Web framework used.
-
-[GreenSock's GSAP](https://greensock.com/): For animations.
-
-[PyTest](https://docs.pytest.org/en/7.4.x/): For testing.
-
-[Selenium](https://www.selenium.dev/): For testing.
 
 __Data storing__:
 
@@ -297,8 +280,21 @@ __Data storing__:
 
 __Media__:
 
-[Freepik](https://www.freepik.com/): For svg in the hero section.
+- Longdog png image:
+https://svgdeal.com/?s=Bluey
 
+- Images with longdogs in them from:
+1. https://www.abc.net.au/news/2023-10-24/hidden-easter-eggs-bluey-long-dog/102820826
+2. https://blueypedia.fandom.com/wiki/Long_Dog_Easter_Egg
+3. https://www.news.com.au/entertainment/tv/bluey-background-artist-reveals-easter-eggs-hidden-in-episodes/news-story/c8b7be2900d4a937b644682cb2139b01 (news.com source for images: Facebook, Adult Bluey Fans)
 [Haikei](https://haikei.app/): For background svg on the [home page](#home-page).
 
-[FontAwesome](https://fontawesome.com/): For icons. -->
+- [Youtube video](https://www.youtube.com/watch?v=xqFM6ykQEwo): I used this video to get me going at the start.
+
+__Other Credits__:
+
+- The blog is based on CI I think therefore I blog that I have adapted to fit my own project.
+
+- Thanks to the slack community for help and somewhere to vent when thing get hard.
+
+- A big thank you to my mentor [Gareth McGirr](https://github.com/Gareth-McGirr/) for the continuing support in all my projects.
