@@ -289,6 +289,10 @@ a {
     background-color: #4f968c;
 }
 
+.footer-text {
+    color: #000;
+}
+
 img.col-1 {
     max-height: 80px;
     max-width: 80px;

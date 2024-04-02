@@ -53,7 +53,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <img src="{% static 'images/blog_images/File-01-color-1.png' %}"
+                        <img src="{% static 'images/blog_images/File-01-color-1.png' %}" alt="A longdog in blue-green colors"
                             class="longdog-collapse img-fluid col-3 d-sm-none">
                         <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
                             href="{% url 'home' %}">Home</a>
@@ -125,11 +125,11 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 text-center text-black">A project made for Code Institute by Jennifer Hujanen</p>
-        <p class="m-0 text-center text-black">Follow me: <a class="fab fa-facebook-square ms-3"
-                href="https://www.facebook.com/" target="_blank"></a>
-            <a class="fab fa-instagram-square ms-3" href="https://www.instagram.com/" target="_blank"></a>
-            <a class="fab fa-github-square ms-3" href="https://github.com/Hujanen91" target="_blank"></a>
+        <p class="m-0 text-center footer-text">A project made for Code Institute by Jennifer Hujanen</p>
+        <p class="m-0 text-center footer-text">Follow me: 
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square ms-3"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square ms-3"></i></a>
+            <a href="https://github.com/Hujanen91" target="_blank"><i class="fab fa-github-square ms-3"></i></a>
         </p>
     </footer>
 
