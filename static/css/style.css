@@ -90,6 +90,7 @@ a {
 
 .card-img-top {
     border-radius: 25px;
+    width: 100%;
 }
 
 .comment-like-count {
