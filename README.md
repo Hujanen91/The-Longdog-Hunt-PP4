@@ -171,23 +171,30 @@ ___Purpose of feature:___
 Provide users with a way to see the specific blogposts and give logged in users a way to interact with the writer and share their opinion of the blogpost through comments.
 
 
-
 __Like button__
 
-The like button, placed on the right end of the screen in height with the project title, allows users to like or unlike a post.
+![Like button](static/images/readme_files/docs/likes.png)
 
-_Additional_: The like button adapts to if the user is authenticated or not. If the user is not authenticated the like button is disabled and displays a tooltip on hover.
+The like button, placed on the left end of the screen right above the comment section, allows users to like or unlike a post.
+
+The liked posts are then stored in the Likes page where the authenticated user can navigate to display all their liked posts.
+
+_Additional_: The like button adapts to if the user is authenticated or not. If the user is not authenticated the like button is disabled.
+
+![Like button](static/images/readme_files/testing_gifs/like-post-signin-req.gif)
 
 ___Purpose of feature:___
 Provide users with a way to to like posts they find interesting.
 
 __Comment section__
 
-![Comment section](media/commentsection.png)
+![Comment section](static/images/readme_files/docs/comments.png)
 
-The comment section allows users to post comments on a post aswell as delete their own comments using the X button in the above image.
+The comment section allows users to post comments on a post aswell as delete and edit their comment using the buttons displayed below the users comments.
 
-_Additional_: The delete button displays a modal requiring the user to confirm deletion of the comment. -->
+_Additional_: The delete button displays a modal requiring the user to confirm deletion of the comment.
+![Delete modal](static/images/readme_files/docs/delete-comment.png)
+
 ## Testing
 
 __Manual testing__
@@ -200,172 +207,10 @@ Click here to go to: [Testing and validation](testing.md)
 
 ## Validators
 
-__HTML & CSS__
+All validation can be found in the testing.md file.
 
-<!-- All html and css files ran through the [Official W3C validator](https://validator.w3.org/) -->
+Click here to go to: [Testing and validation](testing.md)
 
-___CSS___: <!-- All files valid -->
-
-___HTML___:
-
-__Python__
-
-<!-- All files ran through Code Institutes [Python Linter](https://pep8ci.herokuapp.com/#)
-
-___hub_main/views.py___
-
-| Line | Error                                  |
-| ---- | -------------------------------------- |
-| 77   | E501 line too long (138 > 79 characters) |
-| 103  | E501 line too long (97 > 79 characters)  |
-| 137  | E501 line too long (138 > 79 characters) |
-| 229  | E501 line too long (81 > 79 characters)  |
-| 287  | E501 line too long (93 > 79 characters)  |
-| 304  | E501 line too long (91 > 79 characters)  |
-| 314  | E501 line too long (93 > 79 characters)  |
-| 320  | E501 line too long (93 > 79 characters)  |
-
-___hub_main/urls.py___
-
-| Line | Error                                  |
-| ---- | -------------------------------------- |
-| 6    | E501 line too long (96 > 79 characters) |
-| 7    | E501 line too long (112 > 79 characters)|
-| 8    | E501 line too long (94 > 79 characters) |
-| 9    | E501 line too long (98 > 79 characters) |
-| 10   | E501 line too long (110 > 79 characters)|
-| 11   | E501 line too long (102 > 79 characters)|
-| 12   | E501 line too long (127 > 79 characters)|
-| 13   | E501 line too long (120 > 79 characters)|
-| 14   | E501 line too long (90 > 79 characters) |
-| 15   | E501 line too long (98 > 79 characters) |
-
-___hub_main/models.py___
-
-| Line | Error                                  |
-| ---- | -------------------------------------- |
-| 19   | E501 line too long (149 > 79 characters)|
-| 21   | E501 line too long (91 > 79 characters) |
-| 22   | E501 line too long (95 > 79 characters) |
-| 25   | E501 line too long (91 > 79 characters) |
-| 43   | E501 line too long (85 > 79 characters) |
-
-___hub_main/tests.py:___ All clear, no errors found
-
-___hub_main/apps.py:___ All clear, no errors found
-
-___hub_main/admin.py:___ All clear, no errors found
-
-___hub_main/tests/test_submission_update.py___
-
-| Line | Error                                  |
-| ---- | -------------------------------------- |
-| 14   | E501 line too long (86 > 79 characters) |
-
-___hub_main/tests/test_noauth_protection.py___
-
-| Line | Error                                  |
-| ---- | -------------------------------------- |
-| 14   | E501 line too long (86 > 79 characters) |
-
-___hub_main/tests/test_misc.py:___ All clear, no errors found
-
-
-___hub_main/tests/test_like_comment.py___
-
-| Line | Error                                  |
-| ---- | -------------------------------------- |
-| 14   | E501 line too long (82 > 79 characters) |
-| 22   | E501 line too long (86 > 79 characters) |
-| 23   | E501 line too long (81 > 79 characters) |
-| 30   | E501 line too long (82 > 79 characters) |
-| 38   | E501 line too long (86 > 79 characters) |
-| 39   | E501 line too long (81 > 79 characters) |
-| 46   | E501 line too long (81 > 79 characters) |
-| 47   | E501 line too long (80 > 79 characters) |
-| 64   | E501 line too long (102 > 79 characters)|
-| 65   | E501 line too long (102 > 79 characters)|
-| 68   | E501 line too long (82 > 79 characters) |
-| 69   | E501 line too long (90 > 79 characters) |
-
-___hub_main/tests/test_auth.py___
-
-| Line | Error                                  |
-| ---- | -------------------------------------- |
-| 20   | E501 line too long (80 > 79 characters) |
-| 21   | E501 line too long (82 > 79 characters) |
-| 22   | E501 line too long (82 > 79 characters) |
-| 29   | E501 line too long (81 > 79 characters) |
-| 53   | E501 line too long (92 > 79 characters) |
-| 62   | E501 line too long (107 > 79 characters)|
-
-___hub_main/run_tests.py:___All clear, no errors found
-
-___hub_main/helper_functions.py___
-
-| Line | Error                                  |
-| ---- | -------------------------------------- |
-| 22   | E501 line too long (85 > 79 characters) |
-
-___members/views.py:___ All clear, no errors found
-
-___members/urls.py:___ All clear, no errors found
-
-___members/tests.py:___ All clear, no errors found
-
-___members/models.py:___ All clear, no errors found
-
-___members/apps.py:___ All clear, no errors found
-
-___members/admin.py:___ All clear, no errors found
-
-Errors ignored since they make no impact on the functionality but might impact functionality if resolved. -->
-
-__JavaScript__
-
-<!-- All files run through the [JSHint Linter](https://jshint.com/)
-
-___card_animations.js___
-
-| Line | Warning                                                        |
-| ---- | --------------------------------------------------------------- |
-| 6    | Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (gsap, card) |
-| 9    | Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (gsap, card) |
-
-| Error |
-| ----- |
-| var gsap not declared (declared in script tag in template) |
-
-___home_animations.js___
-
-| Error |
-| ----- |
-| var gsap not declared (declared in script tag in template) |
-
-___option_animations.js___
-
-| Line | Warning                                                        |
-| ---- | --------------------------------------------------------------- |
-| 5    | Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (gsap, option) |
-| 8    | Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (gsap, option) |
-
-| Error |
-| ----- |
-| var gsap not declared (declared in script tag in template) |
-
-___load_github.js:___ No errors or warnings.
-
-___validate_inputs.js:___ No errors or warnings.
-
-___word_animations.js___
-
-| Error |
-| ----- |
-| var gsap not declared (declared in script tag in template) | -->
-
-__Lighthouse__
-
-All pages were analyzed by Lighthouse: [See reports]()
 
 ## Deployment
 
@@ -418,9 +263,11 @@ os.environ["CLOUDINARY_SECRET"]=YOUR_CLOUDINARY_SECRET
 os.environ["THUMIO_AUTH"]=YOUR_THUMIO_AUTH_KEY
 ```
 
-## Database schema
+## Database schema and Flowchart
 
-![Database schema](img)
+![Database schema](static/images/readme_files/docs/longdog.drawio.png)
+
+![Flowchart](static/images/readme_files/docs/flowchart.png)
 
 ## Credits
 
