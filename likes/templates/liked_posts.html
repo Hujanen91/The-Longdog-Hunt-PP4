@@ -2,39 +2,36 @@
 {% block content %}
 {% load static %}
 
-<main>
-    <h2 class="text-center">Hi {{ user }}!<br> Here are all the posts you've liked:</h2>
-    <div class="container mt-5 liked-posts-container">
-        <div class="row">
-            {% for liked_post in liked_posts %}  
-            <div class="text-center">
+ 
+<h2 class="text-center">Hi {{ user }}!<br> Here are all the posts you've liked:</h2>
+<div class="container mt-5 liked-posts-container">
+    <div class="row">
+        <div class="text-center">
+            <div class="col-12">
+                <div>
+                {% for liked_post in liked_posts %}
+                <!-- Collect liked posts below -->
                 
-                <div class="col-12">
-                    <!-- Collect liked posts below -->
-                    <div>
-                    <a href="{% url 'post_detail' liked_post.slug  %}" class="post-link">
-                    {% if "placeholder" in liked_post.featured_image.url %}
-                        <img class="card-img-top" src="{% static '/images/Octopus-07.webp' %}"
-                        alt="image displayed on index from blogpost">
-                    {% else %}
-                        <img class="card-img-top" src=" {{ liked_post.featured_image.url }}"
-                            alt="{{ post.title }}">
-                    {% endif %}
-                        <div class="image-flash">
-                        <p class="author ">Author: {{ liked_post.author }}</p>
-                        </div>
-
-                        <h2 class="card-title-likes">{{ liked_post.title }}</h2>
-                        <p class="card-text text-muted created-on h6">{{ liked_post.created_on }} <i
-                                class="far fa-heart"></i> {{ liked_post.number_of_likes }}</p>
-                        </a>
-                        <hr>
-                        {% endfor %}
+                <a href="{% url 'post_detail' liked_post.slug  %}" class="post-link">
+                {% if "placeholder" in liked_post.featured_image.url %}
+                    <img class="card-img-top" src="{% static '/images/Octopus-07.webp' %}"
+                    alt="image displayed on index from blogpost">
+                {% else %}
+                    <img class="card-img-top" src=" {{ liked_post.featured_image.url }}"
+                        alt="{{ post.title }}">
+                {% endif %}
+                    <div class="image-flash">
+                    <p class="author ">Author: {{ liked_post.author }}</p>
                     </div>
+                    <h2 class="card-title-likes">{{ liked_post.title }}</h2>
+                    <p class="card-text text-muted created-on h6">{{ liked_post.created_on }} <i
+                            class="far fa-heart"></i> {{ liked_post.number_of_likes }}</p>
+                    </a>
+                    <hr>
+                {% endfor %}
                 </div>
             </div>
         </div>
     </div>
-    
-</main>
+</div>
 {% endblock content %}

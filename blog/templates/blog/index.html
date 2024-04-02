@@ -48,8 +48,8 @@
                                 {% endif %}
                                 
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top" src="{% static '/images/bluey-placeholder.webp' %}"
-                                    alt="image displayed on index from blogpost">
+                                <img src="{% static '/images/bluey-placeholder.webp' %}" class="scale masthead-container-img"
+                                    alt="placeholder image">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}"
                                     alt="{{ post.title }}">

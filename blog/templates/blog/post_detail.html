@@ -3,7 +3,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<main class="col-12 col-md-9 col-lg-6 post-container post-content-container container">
+<div class="col-12 col-md-9 col-lg-6 post-container post-content-container container">
 <div class="masthead">
     <div class>
         <div class="row g-0">
@@ -34,9 +34,8 @@
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text">
-                    {{ post.content | safe }}
-                </p>
+                <p class="card-text">{{ post.content | safe }}</p>
+                
                 <p class="post-author">Author: {{ post.author }}</p>
             </div>
         </div>
@@ -162,7 +161,6 @@
     </div>
   </div>
 </div>
-</main>
 {% endblock content %}
 
 {% block extras %}
