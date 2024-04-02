@@ -17,4 +17,3 @@ class ContactAdmin(admin.ModelAdmin):
     """
     list_display = ('message', 'read',)
 
-# Register your models here.
