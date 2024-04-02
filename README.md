@@ -1,8 +1,10 @@
 # The Longdog Hunt
 
-The Longdog Hunt is a simple blog based on the kids tv show Bluey and the easter eggs in the show called Longdogs that is hidden in plain sight in pretty much every episode. 
+The Longdog Hunt is a simple blog based on the kids tv show Bluey and the easter eggs in the show called Longdogs that is hidden in plain sight in pretty much every episode.
 
-![Device Mockups]()
+[**Live site**](https://the-longdog-hunt-9f116eb214b4.herokuapp.com/)
+
+![Device Mockups](static/images/readme_files/docs/Mockup.png)
 ## Features
 
 <a name="navbar"></a>
@@ -26,10 +28,10 @@ The navbar will adapt to if user is authenticated or not (When logged in Login a
 
 __Navbar for non-authenticated users__:
 
-![Navbar non auth](static/images/readme_files/navbar-links.png)
+![Navbar non auth](static/images/readme_files/docs/navbar-links.png)
 __Navbar for authenticated users__:
 
-![Navbar auth](static/images/readme_files/navbar-authenticated.png)
+![Navbar auth](static/images/readme_files/docs/navbar-authenticated.png)
 
 ___Purpose of feature:___
 Provide users with an easy and straight-forward way to navigate the site
@@ -40,7 +42,7 @@ Provide users with an easy and straight-forward way to navigate the site
 Featured on all pages across the site.
 The footer contains links to my personal GitHub, Instagram and Facebook.
 
-![Footer](static/images/readme_files/footer.png)
+![Footer](static/images/readme_files/docs/footer.png)
 
 ___Purpose of feature:___
 Provide users with a way to connect with me and check out my GitHub profile and social media accounts.
@@ -57,12 +59,11 @@ __Blog Section__
 
 The Blog Section features the blogposts created by the author and will be displayed the same no matter if the user is logged in or not.
 
-![Blog Section]()
+![Blog Section](static/images/readme_files/docs/Index.png)
 
 
 ___Purpose of feature:___
 Provide users with a welcoming landing page that is straight forward and clear for the user what the website is all about.
-
 
 
 <a name="about-page"></a>
@@ -73,7 +74,7 @@ __The About page consists of:__
     - A profile picture of the blog admin
     - About section
 
-![About page](img)
+![About page](static/images/readme_files/docs/about-page.png)
 
 __Profile picture__
 
@@ -89,12 +90,10 @@ Gives a description of the blog and its content and gives a small presentation o
 ___Purpose of feature:___
 Provide users with information about the blog and a description of the admin.
 
-![About Section](img)
-
 <a name="contact-page"></a>
 ### __Contact Page__
 
-![Contact Page](img)
+![Contact Page](static/images/readme_files/docs/contact-page.png)
 
 __The Contact page consists of:__
 
@@ -119,7 +118,7 @@ Provide users with a way to contact the admin and creator of the site.
 <a name="login-page"></a>
 ### __Login page__
 
-![Login page](img)
+![Login page](static/images/readme_files/docs/login-page.png)
 
 __The Login page consists of:__
 
@@ -129,7 +128,7 @@ __Login form__
 
 The login form allows the user to enter their credentials and authenticate to enter the sites authenticated state.
 
-The login form also contains a link to the [Register page](#register-page) in case the user is not already registered.
+The login form also contains a link to the [Register page](https://the-longdog-hunt-9f116eb214b4.herokuapp.com/accounts/signup/) in case the user is not already registered.
 
 ___Purpose of feature:___
 Provide users with a way to login to the site.
@@ -137,7 +136,7 @@ Provide users with a way to login to the site.
 <a name="register-page"></a>
 ### __Register page__
 
-![Register page](img)
+![Register page](static/images/readme_files/docs/signup-page.png)
 
 __The Register page consists of:__
 
@@ -149,7 +148,7 @@ The Sign up form which is provided by django allows the user to enter credential
 
 Through django it contains all the functionality for a secure registration and displays help text and error text to give the user feedback
 
-The sign up form also contains a link to the [Login page](#login-page) in case the user already has an account.
+The sign up form also contains a link to the [Login page](https://the-longdog-hunt-9f116eb214b4.herokuapp.com/accounts/login/) in case the user already has an account.
 
 ___Purpose of feature:___
 Provide users with a way to register an account on the site.
