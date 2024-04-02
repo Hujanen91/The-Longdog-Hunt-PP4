@@ -238,7 +238,7 @@ a {
 .sign-up-container,
 .about-container,
 .contact-container {
-    background-color: #4f968c;
+    background-color: #4f968c8c;
     border-radius: 25px;
     color: rgb(0, 0, 0);
     padding: 20px
@@ -264,7 +264,7 @@ a {
 }
 
 .link {
-    color: #c04c5d;
+    color: #8d0317;
 }
 
 .btn {
