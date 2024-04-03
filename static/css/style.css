@@ -1,18 +1,14 @@
-
 .bg-white {
     background-image: linear-gradient(white, #d9ebeb);
     background-color: white;
 }
-
 .h-100 {
     background-color: #d9ebeb;
     width: 100%;
 }
-
 .navbar-brand {
     width: 75%;
 }
-
 .navbar-light,
 .navbar-text {
     margin: 25px;
@@ -20,47 +16,38 @@
     border-radius: 25px 25px 0px 0px;
     padding: 5px 5px;
 }
-
 .text-end {
     padding-right: 25px;
 }
-
 hr {
     background-color: #365050;
     margin: 10px;
 }
-
 .created-on {
     color: #000 !important;
     padding-bottom: 5px;
 }
-
 .flex-shrink-0 {
     background-color: #d9ebeb;
     padding-bottom: 50px;
 }
-
 a {
     text-decoration: none;
     color: #914D57;
 }
-
 .index-post-card {
     background-color:#4f968c;
     border-radius: 25px;
 }
-
 .index-post-card:hover {
     background-color: #a4c5c5;
     opacity: 70%;
     transition-duration: 1s;
 }
-
 .card {
     background-color: #d9ebeb;
     border: none;
 }
-
 .card-title {
     color: #365050;
     background-color: #afd9d3;
@@ -69,7 +56,6 @@ a {
     border-radius: 0px 25px 25px 0px;
     margin-left: -18px;
 }
-
 .card-title-likes {
     color: #1b1b1b;
     width: fit-content;
@@ -77,27 +63,22 @@ a {
     text-align: center;
     margin: auto;
 }
-
 .card-text {
     width: 100%;
 }
-
 .card-title-liked-posts {
     color: #000000;
     background-color: #afd9d3;
     width: fit-content;
 }
-
 .card-img-top {
     border-radius: 25px;
     width: 100%;
 }
-
 .comment-like-count {
     display: grid;
     justify-content: end;
 }
-
 .post-author {
     width: fit-content;
     color: #000;
@@ -106,7 +87,6 @@ a {
     padding: 5px 10px 5px 10px;
     margin-left: -30px;
 }
-
 .author {
     width: fit-content;
     font-size: 18px;
@@ -119,17 +99,14 @@ a {
     margin-top: -70px;
     margin-left: -3px
 }
-
 .longdog-collapse {
     margin-top: 10px;
     margin-left: -10px
 }
-
 .about-profile-img {
     border-radius: 25px;
     padding: 15px;
 }
-
 .masthead-container {
     color: #ffffff;
     background-color: #4f968c;
@@ -138,7 +115,6 @@ a {
     padding-top: 10px;
     margin-bottom: -1px;
 }
-
 .masthead-container-img {
     width: 98%;
     display: grid;
@@ -146,12 +122,10 @@ a {
     margin: auto;
     justify-content: center;
 }
-
 .post-title, .post-subtitle {
     margin-left: 10px;
     color: #1b1b1b;
 }
-
 .post-content-container {
     color: #ffffff;
     background-color: #4f968c;
@@ -159,7 +133,6 @@ a {
     padding-bottom: 5px;
     padding-top: 5px;
 }
-
 .post-content-text {
     width: 95%;
     margin: auto;
@@ -168,43 +141,36 @@ a {
     color: #ffffff;
     border-radius: 25px;
 }
-
 .modal-content {
     color: #365050;
 }
-
 .display-comments h3 {
     margin-top: 10px;
 }
-
 .display-comments {
     border: none;
     color: #ffffff;
     background-color: #2e5a5485;
     border-radius: 25px 0px 0px 25px;
 }
-
 .creating-comment {
     border: none;
     color: #ffffff;
     background-color: #2e5a5485;
     border-radius: 0px 25px 25px 0px;
 }
-
 .comment-count {
     margin-left: 10px;
     width: fit-content;
     font-size: 20px;
     color: white !important;
 }
-
 .like-count {
     font-size: 20px;
     color: white !important;
     display: contents;
     padding-right: 10px;
 }
-
 .comment-author {
     font-size: 16px;
     width: fit-content;
@@ -214,13 +180,11 @@ a {
     margin-left: -38px;
     color:#ffffff;
 }
-
 .comment-row {
     margin: auto;
     width: 100%;
     padding: 0px;
 }
-
 .comment-count-index {
     font-size: 140%;
     margin-top: -31px;
@@ -228,12 +192,10 @@ a {
     display: grid;
     justify-content: right;
 }
-
 .contact-container {
     margin: auto;
     justify-content: center;
 }
-
 .sign-in-container,
 .sign-out-container,
 .sign-up-container,
@@ -244,7 +206,6 @@ a {
     color: rgb(0, 0, 0);
     padding: 20px
 }
-
 .liked-posts-container {
     width: 50%;
     background-color: #4f968c;
@@ -252,22 +213,18 @@ a {
     color: rgb(0, 0, 0);
     padding: 20px
 }
-
 .sign-in-container label,
 .sign-out-container label,
 .sign-up-container label {
     display: grid;
 }
-
 .alert-dismissible {
     background-color:#914D57;
     color: white;
 }
-
 .link {
     color: #8d0317;
 }
-
 .btn {
     background-color: #914D57;
     color: #ffff;
@@ -276,7 +233,6 @@ a {
     border-color: #af6c76;
     margin-bottom: 10px;
 }
-
 .btn:hover {
     background-color: #ce919b;
     color: #000000;
@@ -285,15 +241,12 @@ a {
     border-color: #914D57;
     margin-bottom: 10px;
 }
-
 .footer {
     background-color: #4f968c;
 }
-
 .footer-text {
     color: #000;
 }
-
 img.col-1 {
     max-height: 80px;
     max-width: 80px;
@@ -301,14 +254,11 @@ img.col-1 {
     min-width: 55px;
     margin-bottom: 3px;
 }
-
-
 @media screen and (max-width: 576px){
     .navbar-light,
     .navbar-text {
         margin: 0px;
-        padding: 0px;
-    }
+        padding: 0px;}
     .contact-boxes {
         width: 90%;
     }
@@ -329,7 +279,6 @@ img.col-1 {
         font-size: 15px;
     }
 }
-
 @media screen and (min-width: 576px){
     .contact-boxes {
         width: 80%;
@@ -344,7 +293,6 @@ img.col-1 {
         width: 40%;
     }
 }
-
 @media screen and (max-width: 768px){
     .display-comments {
         border-radius: 25px 25px 0px 0px;
@@ -359,16 +307,9 @@ img.col-1 {
         margin: 0;
         border-radius: 0px;
     }
-
-@media screen and (max-width: 992px){
-}
-
 @media screen and (min-width: 992px){
     .post-container {
         max-width: 950px;
     } 
-}
-
-
-    
+}  
 }
