@@ -211,17 +211,33 @@ All validation can be found in the testing.md file.
 
 Click here to go to: [Testing and validation](testing.md)
 
+<hr>
 
-## Deployment
+## Heroku Deployment
+The site was deployed to Heroku. The steps to deploy are as follows:
 
-This project was deployed to Heroku using these steps:
+- Navigate to heroku and create an account
+- Click the new button in the top right corner
+- Select create new app
+- Enter app name
+- Select region and click create app
+- Click the resources tab and search for Heroku Postgres
+- Select hobby dev and continue
+- Go to the settings tab and then click reveal config vars
+- Add the following config vars:
+  - SECRET_KEY: (Your secret key)
+  - DATABASE_URL: (This should already exist with add on of postgres)
+  - EMAIL_HOST_USER: (email address)
+  - EMAIL_HOST_PASS: (email app password)
+  - CLOUNDINARY_URL: (cloudinary api url)
+- Click the deploy tab
+- Scroll down to Connect to GitHub and sign in / authorize when prompted
+- In the search box, find the repositoy you want to deploy and click connect
+- Scroll down to Manual deploy and choose the main branch
+- Click deploy
 
-    1. Fork or clone this repository
-    2. Create a new Heroku app
-    3. Set the buildpacks to Python
-    4. Set the config vars for your database connection and api keys
-    4. Link the Heroku app to the repository
-    5. Click on deploy
+The app should now be deployed.
+
 
 ## Run Locally
 
@@ -262,9 +278,63 @@ os.environ["SECRET_KEY"]=YOUR_SECRET_KEY
 os.environ["CLOUDINARY_SECRET"]=YOUR_CLOUDINARY_SECRET
 os.environ["THUMIO_AUTH"]=YOUR_THUMIO_AUTH_KEY
 ```
+<hr>
+
+## The-Surface-Plane
+### Design
+
+
+### Imagery
+
+The Website logo was made using a longdog png image credited under credits.
+
+The hero image was taken from Pexels which is a royalty free image site.
+
+
+## Technolgies
+
+- HTML
+  - The structure of the Website was developed using HTML as the main language.
+- CSS
+  - The Website was styled using custom CSS in an external file.
+- Python
+  - Python was the main programming language used for the application using the Django Framework.
+- GitHub
+  - Source code is hosted on GitHub
+- Git
+  - Used to commit and push code during the development of the Website
+- Font Awesome
+  - This was used for various icons throughout the site
+- Favicon.io
+  - favicon files were created at https://favicon.io/favicon-converter/
+- balsamiq
+  - wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/#
+- TinyPNG
+  - This was used to compress the hero image for optimal load times
+
+
+**External Python Modules**
+* asgiref==3.7.2 - Used for building asynchronous Python web applications, especially with django.
+* cloudinary==1.29.0 - Cloundinary was set up for use but no custom uploads were made, settings remain for future development
+* crispy-bootstrap5==0.6 - This was used to allow bootstrap5 use with crispy forms
+* dj-database-url==0.5.0 - Used to parse database url for production environment
+* dj3-cloudinary-storage==0.0.6 - Storage system to work with cloudinary
+* Django==4.2.10 - Framework used to build the application
+* django-allauth==0.57.2 - Used for the sites authentication system, sign up, sign in, logout, password resets ect.
+* django-crispy-forms==2.1 - Used to style the forms on render
+* gunicorn==20.1.0 - Installed as dependency with another package
+* oauthlib==3.2.0 - Installed as dependency with another package
+* psycopg2==2.9.9 - Needed for heroku deployment
+* PyJWT==2.8.0 - Installed as dependency with another package
+* python3-openid==3.2.0 - Installed as dependency with another package
+* requests-oauthlib==1.3.1 - Installed as dependency with another package (allauth authentication)
+* sqlparse==0.4.4 - Installed as dependency with another package
+* urllib3==1.26.18 - Installed as dependency with another package
+* whitenoise==5.3.0 - Used to serve static files directly without use of static resource provider like cloundinary
+
 
 ## Wireframes (Balsamiq)
-I created the wireframes for this site with Balsamiq. All wireframes can be found in the folder called [Wireframes](https://github.com/gStarhigh/pro2/tree/main/documentation/wireframes).
+I created the wireframes for this site with Balsamiq.
 The wireframes should not be considered finished product, but as a tool I used as inspiration when creating the Quiz.
 
 <details>
@@ -294,6 +364,8 @@ The wireframes should not be considered finished product, but as a tool I used a
 <summary>Sign in</summary>
 <img src="static/images/readme_files/wireframes/Login - Small screen.png">
 </details>
+
+
 
 
 ## Database schema and Flowchart
