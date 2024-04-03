@@ -493,6 +493,8 @@ https://svgdeal.com/?s=Bluey
 
 __Other Credits__:
 
+- ChatGPT has been used for content text ONLY. No code has been written with ChatGPT
+
 - The blog is based on CI I think therefore I blog that I have adapted to fit my own project.
 
 - Thanks to the slack community for help and somewhere to vent when thing get hard.
