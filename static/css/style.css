@@ -1,3 +1,6 @@
+p {
+    text-align: start !important;
+}
 .bg-white {
     background-image: linear-gradient(white, #d9ebeb);
     background-color: white;
@@ -65,6 +68,7 @@ a {
 }
 .card-text {
     width: 100%;
+    text-align: center;
 }
 .card-title-liked-posts {
     color: #000000;
