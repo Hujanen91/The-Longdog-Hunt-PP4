@@ -16,4 +16,3 @@ class ContactAdmin(admin.ModelAdmin):
     Lists message and read fields for display in admin
     """
     list_display = ('message', 'read',)
-
