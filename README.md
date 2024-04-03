@@ -6,6 +6,37 @@ The Longdog Hunt is a simple blog based on the kids tv show Bluey and the easter
 
 ![Device Mockups](static/images/readme_files/docs/Mockup.png)
 
+# Content
+
+- [Project Goals](#project-goals)
+  - [User Goals](#user-goals)
+  - [Site Owner Goals](#site-owner-goals)
+  - [User Stories](#user-stories)
+  - [Agile Planning](#agile-planning)
+- [Features](#features)
+  - [Navbar](#navbar)
+  - [Footer](#footer)
+  - [Home page](#home-page)
+  - [About Page](#about-page)
+  - [Contact Page](#contact-page)
+  - [Login Page](#login-page)
+  - [Register Page](#register-page)
+  - [Blogpost Page](#blogpost-page)
+- [Testing](#testing)
+- [Validators](#validators)
+- [Heroku Deployment](#heroku-deployment)
+- [Run Locally](#run-locally)
+- [Technologies](#technologies)
+- [Planning](#planning)
+  - [Wireframes](#wireframes)
+  - [Database schema and Flowchart](#database-schema-and-flowchart)
+- [Security](#security)
+- [Credits](#credits)
+
+<hr>
+
+# Project Goals
+
 ## User Goals
 - Read about the Bluey tv show and the Longdog easter eggs
 - Interact with other users by liking and commenting on blogposts.
@@ -30,12 +61,19 @@ The Longdog Hunt is a simple blog based on the kids tv show Bluey and the easter
 * As a user, I want to view my profile, where I can see the recipes I've submitted, my liked recipes, and saved recipes.
 * As an admin, I want the ability to moderate content, including the ability to remove inappropriate or spammy recipes and comments.
 
-![User Stories](static/images/readme_files/docs/Mockup.png)
+<hr>
 
-## Features
+## Agile Planning
+[Link to the user stories project](https://github.com/users/Hujanen91/projects/6)
+ 
+![User Stories](static/images/readme_files/docs/agile-planning-user-stories.png)
 
-<a name="navbar"></a>
-### __Navbar__
+<hr>
+
+# Features
+
+
+## Navbar
 
 __Fully responsive navbar with links to:__
 
@@ -63,8 +101,8 @@ __Navbar for authenticated users__:
 ___Purpose of feature:___
 Provide users with an easy and straight-forward way to navigate the site
 
-<a name="footer"></a>
-### __Footer__
+
+## Footer
 
 Featured on all pages across the site.
 The footer contains links to my personal GitHub, Instagram and Facebook.
@@ -74,8 +112,9 @@ The footer contains links to my personal GitHub, Instagram and Facebook.
 ___Purpose of feature:___
 Provide users with a way to connect with me and check out my GitHub profile and social media accounts.
 
-<a name="home-page"></a>
-### __Home page__
+<hr>
+
+## Home page
 
 __The Home page consists of:__
 
@@ -92,9 +131,9 @@ The Blog Section features the blogposts created by the author and will be displa
 ___Purpose of feature:___
 Provide users with a welcoming landing page that is straight forward and clear for the user what the website is all about.
 
+<hr>
 
-<a name="about-page"></a>
-### __About page__
+## About page
 
 __The About page consists of:__
 
@@ -117,8 +156,9 @@ Gives a description of the blog and its content and gives a small presentation o
 ___Purpose of feature:___
 Provide users with information about the blog and a description of the admin.
 
-<a name="contact-page"></a>
-### __Contact Page__
+<hr>
+
+## Contact Page
 
 ![Contact Page](static/images/readme_files/docs/contact-page.png)
 
@@ -142,8 +182,9 @@ The email field needs to contain an email with @ in it to be sent.
 ___Purpose of feature:___
 Provide users with a way to contact the admin and creator of the site.
 
-<a name="login-page"></a>
-### __Login page__
+<hr>
+
+## Login page
 
 ![Login page](static/images/readme_files/docs/login-page.png)
 
@@ -160,8 +201,9 @@ The login form also contains a link to the [Register page](https://the-longdog-h
 ___Purpose of feature:___
 Provide users with a way to login to the site.
 
-<a name="register-page"></a>
-### __Register page__
+<hr>
+
+## Register page
 
 ![Register page](static/images/readme_files/docs/signup-page.png)
 
@@ -180,8 +222,9 @@ The sign up form also contains a link to the [Login page](https://the-longdog-hu
 ___Purpose of feature:___
 Provide users with a way to register an account on the site.
 
-<a name="Blogpost-page"></a>
-### __Blogpost page__
+<hr>
+
+## Blogpost page
 
 ![Blogpost page](static/images/readme_files/docs/blogpost_detail_view.gif)
 
@@ -222,7 +265,9 @@ The comment section allows users to post comments on a post aswell as delete and
 _Additional_: The delete button displays a modal requiring the user to confirm deletion of the comment.
 ![Delete modal](static/images/readme_files/docs/delete-comment.png)
 
-## Testing
+<hr>
+
+# Testing
 
 __Manual testing__
 
@@ -230,9 +275,9 @@ The website has been manually tested and everything has been documented in the t
 
 Click here to go to: [Testing and validation](testing.md)
 
+<hr>
 
-
-## Validators
+# Validators
 
 All validation can be found in the testing.md file.
 
@@ -240,7 +285,7 @@ Click here to go to: [Testing and validation](testing.md)
 
 <hr>
 
-## Heroku Deployment
+# Heroku Deployment
 The site was deployed to Heroku. The steps to deploy are as follows:
 
 - Navigate to heroku and create an account
@@ -265,8 +310,9 @@ The site was deployed to Heroku. The steps to deploy are as follows:
 
 The app should now be deployed.
 
+<hr>
 
-## Run Locally
+# Run Locally
 
 Clone the project
 
@@ -307,18 +353,7 @@ os.environ["THUMIO_AUTH"]=YOUR_THUMIO_AUTH_KEY
 ```
 <hr>
 
-## The-Surface-Plane
-### Design
-
-
-### Imagery
-
-The Website logo was made using a longdog png image credited under credits.
-
-The hero image was taken from Pexels which is a royalty free image site.
-
-
-## Technolgies
+# Technolgies
 
 - HTML
   - The structure of the Website was developed using HTML as the main language.
@@ -359,7 +394,9 @@ The hero image was taken from Pexels which is a royalty free image site.
 * urllib3==1.26.18 - Installed as dependency with another package
 * whitenoise==5.3.0 - Used to serve static files directly without use of static resource provider like cloundinary
 
+<hr>
 
+# Planning
 ## Wireframes (Balsamiq)
 I created the wireframes for this site with Balsamiq.
 The wireframes should not be considered finished product, but as a tool I used as inspiration when creating the Quiz.
@@ -392,8 +429,7 @@ The wireframes should not be considered finished product, but as a tool I used a
 <img src="static/images/readme_files/wireframes/Login - Small screen.png">
 </details>
 
-
-
+<hr>
 
 ## Database schema and Flowchart
 
@@ -408,8 +444,25 @@ __Data storing__:
 
 [Cloudinary](https://cloudinary.com/): For storing image files in the cloud.
 
+<hr>
 
-## Credits
+# Security
+
+## Cross-Site Request Forgery (CSRF) Protection
+- Implementing CSRF protection helps prevent malicious websites from executing unauthorized actions on behalf of authenticated users.
+- Django provides built-in CSRF protection by including a CSRF token with each form submission and verifying it on the server side.
+
+## Django Allauth for Authentication and Authorization
+- Django Allauth is an authentication and authorization framework that provides features like registration, login, password management, and social authentication.
+- It ensures secure user authentication and authorization processes.
+
+## Restricted Features for Authenticated Users
+- Certain features, such as creating, editing, or deleting comments , are reserved for authenticated users only.
+- By requiring users to be logged in to access these features, the application enhances security and ensures that sensitive operations are performed by authorized individuals only.
+
+<hr>
+
+# Credits
 __Media__:
 
 - Longdog png image:
