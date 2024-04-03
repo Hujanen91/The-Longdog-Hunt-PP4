@@ -6,8 +6,11 @@ from .models import Post, Comment
 from .forms import CommentForm
 
 
-# Create your views here.
 class PostList(generic.ListView):
+    """
+    The view to display a list
+    of published blogposts
+    """
     queryset = Post.objects.filter(status=1)
     template_name = "blog/index.html"
     paginate_by = 6
@@ -22,18 +25,14 @@ class PostList(generic.ListView):
 
 def post_detail(request, slug):
     """
-    Display an individual :model:`blog.Post`.
-
-    **Context**
-
-    ``post``
-        An instance of :model:`blog.Post`.
-
-    **Template:**
-
-    :template:`blog/post_detail.html`
+    Handles the view for every blog post and
+    its details.
+    Retrieves a specific post based on the
+    blogposts specific slug.
+    Retrieves the comments and related to
+    the specific post being viewed and
+    checks if the user has already liked the post.
     """
-
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     comments = post.comments.order_by("-created_on")
@@ -73,7 +72,11 @@ def post_detail(request, slug):
 
 
 class PostLike(View):
-
+    """
+    Handles the like function on the specific
+    post being viewed.
+    Handles the like and dislice function
+    """
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
 
@@ -132,3 +135,4 @@ def comment_delete(request, slug, comment_id):
                              'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+    

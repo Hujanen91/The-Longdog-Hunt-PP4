@@ -5,7 +5,8 @@ from .models import About
 # Create your views here.
 def about_me(request):
     """
-    Renders the About page
+    Renders the About page and the most recent imformation
+    the admin has posted
     """
     about = About.objects.all().order_by('-updated_on').first()
 

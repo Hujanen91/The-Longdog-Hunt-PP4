@@ -5,8 +5,12 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
-# Create your models here.
 class Post(models.Model):
+    """
+    Post class to render the main post page,
+    this class model defines the structure and
+    behavior of the blogposts in the project
+    """
     season_choices = [(None, '------')] + [(x, x) for x in range(1, 4)]
     episode_choices = [(None, '------')] + [(x, x) for x in range(1, 54)]
 
@@ -39,6 +43,11 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
+    """
+    Class model to define the structure of
+    the comments including attributes such as the
+    author, the comment itself and timestamp of creation.
+    """
     post = models.ForeignKey(Post, on_delete=models.CASCADE,
                              related_name="comments")
     author = models.ForeignKey(User, on_delete=models.CASCADE,

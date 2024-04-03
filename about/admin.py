@@ -1,8 +1,9 @@
 from django.contrib import admin
-from .models import About
 from django_summernote.admin import SummernoteModelAdmin
+from .models import About
 
-# Register your models here.
+
+# Add Summernote fields to blogpost creation in admin
 @admin.register(About)
 class AboutAdmin(SummernoteModelAdmin):
 

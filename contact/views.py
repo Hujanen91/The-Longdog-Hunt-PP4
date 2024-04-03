@@ -4,6 +4,14 @@ from .forms import ContactForm
 
 
 def contact_form_view(request):
+    """
+    The view for the contactform.
+    Handels the contact form submission.
+    Handels both a POST and GET request.
+    The POST handles the submitting of the message,
+    it makes sure it gets saved and sent to the database.
+    The GET request initializes an empy contact form.
+    """
     if request.method == "POST":
         contact_form = ContactForm(data=request.POST)
         if contact_form.is_valid():
