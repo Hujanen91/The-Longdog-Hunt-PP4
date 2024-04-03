@@ -5,6 +5,33 @@ The Longdog Hunt is a simple blog based on the kids tv show Bluey and the easter
 [**Live site**](https://the-longdog-hunt-9f116eb214b4.herokuapp.com/)
 
 ![Device Mockups](static/images/readme_files/docs/Mockup.png)
+
+## User Goals
+- Read about the Bluey tv show and the Longdog easter eggs
+- Interact with other users by liking and commenting on blogposts.
+- Easily navigate the platform and access relevant information.
+- Have a visually appealing and responsive user interface.
+
+## Site Owner Goals
+- Create a intertesting blog about the Longdogs and Bluey.
+- Engage users by providing valuable content and features.
+- Increase user retention through interactive features and personalized experiences.
+
+## User Stories
+
+* As a user, I want to create an account with a unique username and password, so I can start sharing and managing my recipes.
+* As a registered user, I want to log in and out of my account to access my saved recipes and submit new recipes.
+* As a user, I want to upload a recipe with a title, ingredients, steps, and an optional photo.
+* As a user, I want to edit my existing recipes, so I can update them with new information or corrections.
+* As a user, I want to delete my recipes if I no longer want them to be available on the platform.
+* As a user, I want to browse and search for recipes submitted by other users.
+* As a user, I want to like and save recipes I find interesting, so I can access them later in my saved recipes.
+* As a user, I want to leave comments on recipes to ask questions, provide feedback, or share my thoughts.
+* As a user, I want to view my profile, where I can see the recipes I've submitted, my liked recipes, and saved recipes.
+* As an admin, I want the ability to moderate content, including the ability to remove inappropriate or spammy recipes and comments.
+
+![User Stories](static/images/readme_files/docs/Mockup.png)
+
 ## Features
 
 <a name="navbar"></a>
