@@ -491,6 +491,11 @@ I added a Season and Episode selection to the admin create post panel.
 This makes it possible to pick Season and Episode that the post is gonna be about.
 If non of them are selected there will be nothing posted next to the date/time on blogposts. If the user selects Season and Episode then they will show next to date/time on the blogpost.
 
+The only bug that needs to be fixed later on is when creating a post.
+Admin can pick already known users that has liked the post but only one at a time. 
+If multiple users are picked then the admin is prompted to create users.
+This field will be removed in later edits when I have more time.
+
 
 </summary>
 </details>
@@ -543,6 +548,31 @@ __Wave__
 The website was checked through wave [Wave](https://wave.webaim.org/)
 No Errors are showing up in Wave.
 ![Wave](static/images/readme_files/docs/Validation-wave-index-clear.png)
+
+
+## Responsiveness
+
+All pages were tested to ensure responsiveness on screen sizes from 320px and upwards as defined in WCAG 2.1 Reflow criteria for responsive design on Chrome, Edge, Firefox and Opera browsers.
+
+Steps to test:
+
+- Open browser and navigate to [The Longdog Hunt](https://the-longdog-hunt-9f116eb214b4.herokuapp.com/)
+- Open the developer tools (right click and inspect)
+- Set to responsive and decrease width to 320px
+- Set the zoom to 50%
+-  Click and drag the responsive window to maximum width
+
+Expected:<br>
+Website is responsive on all screen sizes and no images are pixelated or stretched. No horizontal scroll is present. No elements overlap.
+
+Actual:<br>
+Website behaved as expected.
+
+Website was also opened on the following devices and no responsive issues were seen:
+
+Google Pixel 8 Pro<br>
+Huawei p20 pro
+
 
 
 ## Bugs
