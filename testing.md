@@ -503,28 +503,38 @@ __HTML & CSS__
 
 All html and css files ran through the [Official W3C validator](https://validator.w3.org/)
 
-___CSS___: All files valid
+___CSS___: All files valid<br>
+![CSS](static/images/readme_files/docs/Validation-css-clear.png)
 
-___HTML___: All html passed except for the blogpost page and signup page. 
+___HTML___: All html passed whitout any errors except for the blogpost page and signup page.
+![HTML](static/images/readme_files/docs/Validation-HTML-index-clear.png)
+
 Errors displayed below are errors caused by Allauth and by Summernote and is nothing I can do anythin about considering the errors are caused by code from other packages and not my direct code.
+Summernote adds styling to the HTML code on blogposts and about page that I have not added myself and this is then causing errors in the validation.
 Errors ignored since they are not caused by my code and make no impact on the functionality but might impact functionality and the visual aspects if resolved.
+![HTML Errors](static/images/readme_files/docs/Validation-HTML-blogpost-error-summernote.png)
+![HTML Errors](static/images/readme_files/docs/Validation-HTML-blogpost-error-summernote-2.png)
+![HTML Errors](static/images/readme_files/docs/Validation-HTML-signup-errorsfromdjangoform.png)
+![HTML Errors](static/images/readme_files/docs/Validation-HTML-signup-errorsfromdjangoform-details.png)
 
 __Python__
 
 All files ran through Code Institutes [Python Linter](https://pep8ci.herokuapp.com/#)
-
 Every .py file has passed without any issues or errors.
-
+![python](static/images/readme_files/docs/Validation-python-clear.png)
 
 __JavaScript__
 
 All files run through the [JSHint Linter](https://jshint.com/)
-
 Javascript file passed without any issues or errors.
+![javascript](static/images/readme_files/docs/Validation-js.png)
 
 __Lighthouse__
 
-All pages were analyzed by Lighthouse: [See reports]()
+Website was analyzed with Lighthouse: ![Lighthouse](static/images/readme_files/docs/Lighthouse.png)
+
+Performance can be improved with changing how cloudinary handles the images.
+Some of the issues that had negative impact on the perfomance had to do with Heroku itself and the database, things I can't change at this moment.
 
 
 ## Bugs
