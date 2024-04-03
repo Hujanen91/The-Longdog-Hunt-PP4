@@ -50,16 +50,31 @@ The Longdog Hunt is a simple blog based on the kids tv show Bluey and the easter
 
 ## User Stories
 
-* As a user, I want to create an account with a unique username and password, so I can start sharing and managing my recipes.
-* As a registered user, I want to log in and out of my account to access my saved recipes and submit new recipes.
-* As a user, I want to upload a recipe with a title, ingredients, steps, and an optional photo.
-* As a user, I want to edit my existing recipes, so I can update them with new information or corrections.
-* As a user, I want to delete my recipes if I no longer want them to be available on the platform.
-* As a user, I want to browse and search for recipes submitted by other users.
-* As a user, I want to like and save recipes I find interesting, so I can access them later in my saved recipes.
-* As a user, I want to leave comments on recipes to ask questions, provide feedback, or share my thoughts.
-* As a user, I want to view my profile, where I can see the recipes I've submitted, my liked recipes, and saved recipes.
-* As an admin, I want the ability to moderate content, including the ability to remove inappropriate or spammy recipes and comments.
+<b>Following user stories was implemeneted in the project:</b>
+
+* As a Site Admin, I can create or update the about page content so that it is available on the site.
+* As a Site Admin I can delete users so that I can manage my websites users
+* As a admin I can add what season and episode the longdog in the picture is from when I'm creating a blog post so that the user knows witch episode the image is from.
+* As an admin I can create drafts so that I can save and edit posts that I feel isn't ready to be posted yet.
+* As a Site Admin I can create, read, update and delete posts so that I can manage my websites content
+* As a user I can view the posts I liked on a separate page so that I can get a simple overview of the posts I liked.
+* As a user, I can like posts created by other users.
+* As a user I can edit and delete my comments so that I can manage my comments on the blog.
+* As a user I can open posts so that I can read them
+* As a user I can create comments on blogposts so that I can share my thoughts and opinions
+* As a user I can create an account to be able to comment and like posts on the blog.
+* As a user I can go to "About" on the blog so that I can read about the blog and it's writer
+* As a user I can use the contact form so that I can contact the admin of the blog
+* As a user, I can generate shareable links for my posts to share them outside the platform.
+
+<b>Following user stories was not implemented and labeled as "Wont Have"</b>
+
+* As a admin of the blog, I can schedule posts to be published at a later date and time.
+* As a user, I can view profiles of other users to easier see what that specific user has liked and commented.
+* As a user I can rate the episode each blogpost is about so that I can give my opinion and see what others think of the episode.
+* As a user, I can receive push notifications for new comments on the same blog posts I have commented on.
+* As a user, I can bookmark posts to create a collection of my favorite content.
+
 
 <hr>
 
@@ -481,5 +496,7 @@ __Other Credits__:
 - The blog is based on CI I think therefore I blog that I have adapted to fit my own project.
 
 - Thanks to the slack community for help and somewhere to vent when thing get hard.
+
+- Thanks and credits to Rackstorm for helping me. I've used her code as insperation to get stuff to work when it didn't [Rackstorm](https://github.com/Rackstorm)
 
 - A big thank you to my mentor [Gareth McGirr](https://github.com/Gareth-McGirr/) for the continuing support in all my projects.
