@@ -263,13 +263,44 @@ os.environ["CLOUDINARY_SECRET"]=YOUR_CLOUDINARY_SECRET
 os.environ["THUMIO_AUTH"]=YOUR_THUMIO_AUTH_KEY
 ```
 
+## Wireframes (Balsamiq)
+I created the wireframes for this site with Balsamiq. All wireframes can be found in the folder called [Wireframes](https://github.com/gStarhigh/pro2/tree/main/documentation/wireframes).
+The wireframes should not be considered finished product, but as a tool I used as inspiration when creating the Quiz.
+
+<details>
+<summary><b>Wireframes for desktop</b></summary>
+<summary>Index</summary>
+<img src="static/images/readme_files/wireframes/Index.png">
+<summary>About</summary>
+<img src="static/images/readme_files/wireframes/About.png">
+<summary>Contact</summary>
+<img src="static/images/readme_files/wireframes/Contact.png">
+<summary>Sign up</summary>
+<img src="static/images/readme_files/wireframes/Create Account.png">
+<summary>Sign in</summary>
+<img src="static/images/readme_files/wireframes/Login.png">
+</details>
+
+<details>
+<summary><b>Wireframes for mobile</b></summary>
+<summary>Index</summary>
+<img src="static/images/readme_files/wireframes/Index - Small screen.png">
+<summary>About</summary>
+<img src="static/images/readme_files/wireframes/About - Small screen.png">
+<summary>Contact</summary>
+<img src="static/images/readme_files/wireframes/Contact - Small screen.png">
+<summary>Sign up</summary>
+<img src="static/images/readme_files/wireframes/Create Account - Small screen.png">
+<summary>Sign in</summary>
+<img src="static/images/readme_files/wireframes/Login - Small screen.png">
+</details>
+
+
 ## Database schema and Flowchart
 
 ![Database schema](static/images/readme_files/docs/longdog.drawio.png)
 
 ![Flowchart](static/images/readme_files/docs/flowchart.png)
-
-## Credits
 
 
 __Data storing__:
@@ -278,6 +309,8 @@ __Data storing__:
 
 [Cloudinary](https://cloudinary.com/): For storing image files in the cloud.
 
+
+## Credits
 __Media__:
 
 - Longdog png image:
