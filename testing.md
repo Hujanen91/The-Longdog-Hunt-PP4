@@ -539,8 +539,22 @@ Some of the issues that had negative impact on the perfomance had to do with Her
 
 ## Bugs
 
-| Screenshot | Notes |
-| --- | --- |
-| ![screenshot](docs/bug__linetoolong.png) |  Three lines of code in option-picking the riddles was given the "line too long" warning in the validator. I tried everything to break the lines in two and make it work and everything came back giving errors in either the terminal or in the validator. The only thing that actually worked without errors was a backward slash but instead this created a big gap between the line telling the user to pick an answer and the "(1-4)". I decided to edit the printed text to make it short enough to be on the same line to make it work and look the best it could without awkward gaps. |
+There are no current bugs on the website that I know of.
 
----
+Bugs that I bumped into in production but managed to solve:
+
+- Got errors and warnings on livesite. 
+This was solved by looking at my other code from I think therefore I blog and compare it. I then realized I hade to move endblocks to correct places and that solved the problem.
+
+- Removing approval on comments did not work at first. 
+This was solved when I found out that I missed one approval.
+
+- Comments recently posted by user duplicates if user refreshes the page.
+This was solved by removing post.comments.all() in views.py due to it retrieving all comments related to the post and instead add "return HttpResponseRedirect(request.path_info)" and " comments = post.comments.filter(approved=True).order_by("-created_on")" to the post_detail view.
+
+- Got bad request 400 on Heroku after deployment and after trying to install cloudinary storage for staticfiles. 
+This was eventually solved by adding a code above cloudinary storage codes in settings.py that promted cloudinary to send https instead of http that threw errors.
+This bug is related to the bug below:
+
+- Got errors in devtools telling me I had mixed content requested as insecure element (http) and had to automatically be upgraded to HTTPS. Solved this error by import coudinary in settings and then adding cloudinary.config(secure=True) above my static files, now everything works without any issues.
+This solution also made the cloudinary storage of staticfiles possible.
