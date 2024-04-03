@@ -485,10 +485,12 @@ These have all been tested and are prompted as they should:
 <summary>
 
 The adminpanel testing was done by clicking my way trough and manually test the functions.
+Everything that was already set from the walkthrough works as it should, nothing is bugged.
 
-- Clicking on Posts -> Displays blogposts with 
-- Clicking on each post -> Opens the post and enables the editing of said post
-- 
+I added a Season and Episode selection to the admin create post panel.
+This makes it possible to pick Season and Episode that the post is gonna be about.
+If non of them are selected there will be nothing posted next to the date/time on blogposts. If the user selects Season and Episode then they will show next to date/time on the blogpost.
+
 
 </summary>
 </details>
@@ -535,6 +537,12 @@ Website was analyzed with Lighthouse: ![Lighthouse](static/images/readme_files/d
 
 Performance can be improved with changing how cloudinary handles the images.
 Some of the issues that had negative impact on the perfomance had to do with Heroku itself and the database, things I can't change at this moment.
+
+__Wave__
+
+The website was checked through wave [Wave](https://wave.webaim.org/)
+No Errors are showing up in Wave.
+![Wave](static/images/readme_files/docs/Validation-wave-index-clear.png)
 
 
 ## Bugs
