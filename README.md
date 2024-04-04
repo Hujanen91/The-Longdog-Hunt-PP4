@@ -500,6 +500,6 @@ __Other Credits__:
 
 - Thanks to the slack community for help and somewhere to vent when things get hard.
 
-- Thanks to Rackstorm for letting me vent when stuff got hard and frustrating and helping me out with tips and by checking out and test my project. I've used her code for likes and likes page as inspiration to get stuff to work when it didn't [Rackstorm](https://github.com/Rackstorm)
+- Thanks to [Rackstorm](https://github.com/Rackstorm) for letting me vent when stuff got hard and frustrating and helping me out with tips and by checking out and test my project. I've used her code for likes and likes page as inspiration to get stuff to work when it didn't.
 
 - A big thank you to my mentor [Gareth McGirr](https://github.com/Gareth-McGirr/) for the continuing support in all my projects.
