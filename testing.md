@@ -9,20 +9,28 @@
 Testing was performed to ensure all navigation links on the respective pages, navigated to the correct pages as per design. This was done by clicking on the navigation links on each page.
 
 - Home -> index.html
+
 ![Home](static/images/readme_files/testing_gifs/clickhometoindex.gif)
 - About -> about.html
+
 ![About](static/images/readme_files/testing_gifs/clickabout.gif)
 - Contact -> contact.html
+
 ![Contact](static/images/readme_files/testing_gifs/clickcontact.gif)
 - Likes -> liked_posts.html
+
 ![Like post](static/images/readme_files/testing_gifs/likes-posts-page.gif)
 - Logout -> Sign out all auth page
+
 ![Logout](static/images/readme_files/testing_gifs/logout-gif.gif)
 - Login -> Sign in all auth page
+
 ![Login](static/images/readme_files/testing_gifs/clicklogin.gif)
 - Register -> Sign up all auth page
+
 ![Register](static/images/readme_files/testing_gifs/clickregister.gif)
 - Clicking on blogposts in index.html -> post_detail.html
+
 ![Blogpost](static/images/readme_files/testing_gifs/blog_post_view.gif)
 
 - Link to login on register -> Sign up all auth page
@@ -30,6 +38,7 @@ Testing was performed to ensure all navigation links on the respective pages, na
 - Link to sign up all auth page on login page -> Sign up all auth page
 
 - Navigation menu will scale down to a hamburger menu when screen size gets smaller and the longdog dog icon will be hidden to save space on page. Instead a longdog icon is hidden at the top of the collapsed menu.
+
 ![Blogpost](static/images/readme_files/testing_gifs/menu-collapse.gif)
 
 All navigation links directed to the correct pages as expected.
@@ -66,6 +75,7 @@ The user should get a message confirming the message is sent.
 Actual: 
 
 The confirming message is displayed when user clicks on submit.
+
 ![Contact form](static/images/readme_files/docs/contact-form-sent-confirm.png)
 
 <hr>
@@ -96,6 +106,7 @@ Actual:
 
 The message is prompted on each field when the user has left them empty. 
 When every required field is filled the message is sent and the user gets the confirmation message.
+
 ![Name required](static/images/readme_files/testing/contact-name-req.png)
 ![Email required](static/images/readme_files/testing/contact-email-req.png)
 ![Email required](static/images/readme_files/testing/contact-email-req-2.png)
@@ -154,6 +165,7 @@ User is successfully logged in and redirected to the home page
 Actual:
 
 User is successfully logged in and redirected to the home page
+
 ![Signup](static/images/readme_files/testing_gifs/login-gif.gif)
 
 <hr>
@@ -177,6 +189,7 @@ User is logged out
 Actual:
 
 User is logged out
+
 ![Signup](static/images/readme_files/testing_gifs/logout-gif.gif)
 
 <hr>
@@ -200,6 +213,7 @@ The user is prompted to fill out the username field. If user does not fill the n
 Actual:
 
 The username field displays a message telling the user to fill out the missing field.
+
 ![Signup](static/images/readme_files/testing/sign-up-username-req.png)
 
 
@@ -217,7 +231,8 @@ The user is prompted to fill out the password field
 
 Actual:
 
-An alert message appears and is prompting the user to fill out the password field
+An alert message appears and is prompting the user to fill out the password field.
+
 ![Signup](static/images/readme_files/testing/sign-up-password-req.png)
 
 
@@ -235,7 +250,8 @@ The user is prompted to fill out the correct password according to the requireme
 
 Actual:
 
-An alert message appears and is prompting the user to fill out the password the correct way
+An alert message appears and is prompting the user to fill out the password the correct way.
+
 ![Signup](static/images/readme_files/testing/sign-up-password-req-2.png)
 ![Signup](static/images/readme_files/testing/sign-up-password-req-3.png)
 ![Signup](static/images/readme_files/testing/sign-up-password-req-4.png)
@@ -269,6 +285,7 @@ Comment is posted with a confirmation message and the comment is displayed strai
 Actual:
 
 Comments, confirmation message and buttons are all displayed as they are supposed to without any issues.
+
 ![Signup](static/images/readme_files/testing_gifs/comment-submit.gif)
 ![Signup](static/images/readme_files/testing_gifs/new-comment-displayed.gif)
 
@@ -293,6 +310,7 @@ The user can only edit and delete their own comments
 Actual:
 
 The edit and delete buttons are only visible to the author of said comment.
+
 ![Signup](static/images/readme_files/docs/comments.png)
 
 <hr>
@@ -318,6 +336,7 @@ Users comments can be edited when clicking Edit below the users comment. When cl
 Actual:
 
 The comment can be edited, message is displayed when new comment is submitted and the new comment is visible in the commentsfield.
+
 ![Comment edit](static/images/readme_files/testing_gifs/edit-comment.gif)
 
 <hr>
@@ -344,6 +363,7 @@ The comment should now have been deleted.
 Actual:
 
 The comment is deleted as expected.
+
 ![Comment delete](static/images/readme_files/testing_gifs/comment-delete-and-confirm.gif)
 
 <hr>
@@ -423,7 +443,7 @@ steps:
 
 Expected:
 
-The commentfield should not be displayed for a non authenticated user and a message should tell them to sign in to comment or like and a link to the login page should be provided.
+The comment textfield should not be displayed for a non authenticated user and a message should tell them to sign in to comment or like and a link to the login page should be provided.
 
 Actual:
 
@@ -462,7 +482,19 @@ The navbar displays the exptected links.
 <summary>
 <b>Confirmation messages</b>
 
-Confirmation messages are prompted whenever the user makes any type of change: create something that is posted, delete something, send something, like or unlike a post, make edit, sign out, sign in or sign up.
+Confirmation messages are prompted whenever the user makes any type of change: 
+
+- Sign in - "Successfully signed in as -username-"
+- Sign up - "Successfully signed in as -username-"
+- Sign out - "You have signed out"
+- Submits a comment - "Comment submitted successfully"
+- Edit a comment - "Comment updated!"
+- Deletes a comment - "Comment deleted!" 
+- Sends a messade with the contact form - "Thank you for your message. I will get back to you as soon as possible"
+- Likes a post - "You have successfully liked this post"
+- Unlikes a post - "You have successfully unliked this post"
+
+
 These have all been tested and are prompted as they should:
 
 ![Signing in](static/images/readme_files/testing/login-confirmation.png)
@@ -502,7 +534,7 @@ This field will be removed in later edits when I have more time.
 
 **Footer**
 
-Testing was performed on the footer links by clicking the font awesome icons and ensuring that the facebook icon opened facebook in a new tab and the github icon opened the github respitory in another tab. These behaved as expected.
+Testing was performed on the footer links by clicking the font awesome icons and ensuring that the facebook icon opened facebook in a new tab, that the instagram icon opened instagram in a new tab and the github icon opened the github respitory in another tab. These behaved as expected.
 
 
 ## Code Validation
@@ -511,14 +543,18 @@ __HTML & CSS__
 All html and css files ran through the [Official W3C validator](https://validator.w3.org/)
 
 ___CSS___: All files valid<br>
+
 ![CSS](static/images/readme_files/docs/Validation-css-clear.png)
 
 ___HTML___: All html passed whitout any errors except for the blogpost page and signup page.
+
 ![HTML](static/images/readme_files/docs/Validation-HTML-index-clear.png)
 
-Errors displayed below are errors caused by Allauth and by Summernote and is nothing I can do anythin about considering the errors are caused by code from other packages and not my direct code.
+Errors displayed below are errors <b>caused by Allauth and by Summernote and is nothing I can do anything about</b> considering the errors are caused by code from other packages and not my direct code.
+
 Summernote adds styling to the HTML code on blogposts and about page that I have not added myself and this is then causing errors in the validation.
 Errors ignored since they are not caused by my code and make no impact on the functionality but might impact functionality and the visual aspects if resolved.
+
 ![HTML Errors](static/images/readme_files/docs/Validation-HTML-blogpost-error-summernote.png)
 ![HTML Errors](static/images/readme_files/docs/Validation-HTML-blogpost-error-summernote-2.png)
 ![HTML Errors](static/images/readme_files/docs/Validation-HTML-signup-errorsfromdjangoform.png)
@@ -526,19 +562,21 @@ Errors ignored since they are not caused by my code and make no impact on the fu
 
 __Python__
 
-All files ran through Code Institutes [Python Linter](https://pep8ci.herokuapp.com/#)
-Every .py file has passed without any issues or errors.
+All files ran through Code Institutes [Python Linter](https://pep8ci.herokuapp.com/#)<br>
+Every .py file has passed without any issues or errors.<br>
+
 ![python](static/images/readme_files/docs/Validation-python-clear.png)
 
 __JavaScript__
 
 All files run through the [JSHint Linter](https://jshint.com/)
 Javascript file passed without any issues or errors.
+
 ![javascript](static/images/readme_files/docs/Validation-js.png)
 
 __Lighthouse__
 
-Website was analyzed with Lighthouse: ![Lighthouse](static/images/readme_files/docs/Lighthouse.png)
+Website was analyzed with Lighthouse: ![Lighthouse](static/images/readme_files/docs/Lighthouse.png)<br>
 
 Performance can be improved with changing how cloudinary handles the images.
 Some of the issues that had negative impact on the perfomance had to do with Heroku itself and the database, things I can't change at this moment.
@@ -547,6 +585,7 @@ __Wave__
 
 The website was checked through wave [Wave](https://wave.webaim.org/)
 No Errors are showing up in Wave.
+
 ![Wave](static/images/readme_files/docs/Validation-wave-index-clear.png)
 
 
@@ -560,7 +599,7 @@ Steps to test:
 - Open the developer tools (right click and inspect)
 - Set to responsive and decrease width to 320px
 - Set the zoom to 50%
--  Click and drag the responsive window to maximum width
+- Click and drag the responsive window to maximum width
 
 Expected:<br>
 Website is responsive on all screen sizes and no images are pixelated or stretched. No horizontal scroll is present. No elements overlap.

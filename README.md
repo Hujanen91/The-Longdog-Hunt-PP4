@@ -368,7 +368,7 @@ os.environ["THUMIO_AUTH"]=YOUR_THUMIO_AUTH_KEY
 ```
 <hr>
 
-# Technolgies
+# Technologies
 
 - HTML
   - The structure of the Website was developed using HTML as the main language.
@@ -487,9 +487,10 @@ https://svgdeal.com/?s=Bluey
 1. https://www.abc.net.au/news/2023-10-24/hidden-easter-eggs-bluey-long-dog/102820826
 2. https://blueypedia.fandom.com/wiki/Long_Dog_Easter_Egg
 3. https://www.news.com.au/entertainment/tv/bluey-background-artist-reveals-easter-eggs-hidden-in-episodes/news-story/c8b7be2900d4a937b644682cb2139b01 (news.com source for images: Facebook, Adult Bluey Fans)
-[Haikei](https://haikei.app/): For background svg on the [home page](#home-page).
 
-- [Youtube video](https://www.youtube.com/watch?v=xqFM6ykQEwo): I used this video to get me going at the start.
+- [Youtube video](https://www.youtube.com/watch?v=xqFM6ykQEwo): I used this video to get me going with the like button.
+
+- Fontawesome for icons
 
 __Other Credits__:
 
@@ -497,8 +498,8 @@ __Other Credits__:
 
 - The blog is based on CI I think therefore I blog that I have adapted to fit my own project.
 
-- Thanks to the slack community for help and somewhere to vent when thing get hard.
+- Thanks to the slack community for help and somewhere to vent when things get hard.
 
-- Thanks and credits to Rackstorm for helping me. I've used her code as insperation to get stuff to work when it didn't [Rackstorm](https://github.com/Rackstorm)
+- Thanks and credits to Rackstorm for helping me. I've used her code for likes and likes page as inspiration to get stuff to work when it didn't [Rackstorm](https://github.com/Rackstorm)
 
 - A big thank you to my mentor [Gareth McGirr](https://github.com/Gareth-McGirr/) for the continuing support in all my projects.
