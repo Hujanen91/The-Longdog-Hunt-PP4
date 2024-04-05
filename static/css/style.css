@@ -70,6 +70,10 @@ a {
     width: 100%;
     text-align: center;
 }
+.card-text-liked-posts {
+    width: 100%;
+    text-align: center !important;
+}
 .card-title-liked-posts {
     color: #000000;
     background-color: #afd9d3;
@@ -174,6 +178,7 @@ a {
     color: white !important;
     display: contents;
     padding-right: 10px;
+    font-weight: 700;
 }
 .comment-author {
     font-size: 16px;
