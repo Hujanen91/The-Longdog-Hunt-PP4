@@ -555,10 +555,18 @@ Errors displayed below are errors <b>caused by Allauth and by Summernote and is 
 Summernote adds styling to the HTML code on blogposts and about page that I have not added myself and this is then causing errors in the validation.
 Errors ignored since they are not caused by my code and make no impact on the functionality but might impact functionality and the visual aspects if resolved.
 
-![HTML Errors](static/images/readme_files/docs/Validation-HTML-blogpost-error-summernote.png)
-![HTML Errors](static/images/readme_files/docs/Validation-HTML-blogpost-error-summernote-2.png)
 ![HTML Errors](static/images/readme_files/docs/Validation-HTML-signup-errorsfromdjangoform.png)
 ![HTML Errors](static/images/readme_files/docs/Validation-HTML-signup-errorsfromdjangoform-details.png)
+![HTML Errors](static/images/readme_files/docs/Validation-HTML-blogpost-error-summernote.png)
+![HTML Errors](static/images/readme_files/docs/Validation-HTML-blogpost-error-summernote-2.png)
+
+The warning in the code is known and is nothing I can change as it would throw off my styling and layout of the blogtitle. The h1 is the top level, it's the first h1 element in the code, moving it around would make the layout change so I left it as it is.
+
+<b>Error nr.13 above is also caused by summernote. The image below displays the lines of code that is (according to the validator) wrong. The error is again caused by summernote adding styling in my html code on the livesite.
+
+![HTML Errors](static/images/readme_files/docs/code-error-validation-source.png)
+
+
 
 __Python__
 
