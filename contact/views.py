@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.http import HttpResponseRedirect
 from .forms import ContactForm
 
 
@@ -19,6 +20,7 @@ def contact_form_view(request):
             messages.add_message(request, messages.SUCCESS,
                                  "Thank you for your message. "
                                  "I will get back to you as soon as possible.")
+            return HttpResponseRedirect(request.path_info)
     else:
         contact_form = ContactForm()
     return render(request, 'contact.html', {'contact_form': contact_form})
